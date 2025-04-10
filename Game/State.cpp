@@ -25,6 +25,11 @@ Vector2 State::GetPosition()
 	return position;
 }
 
+const char* State::GetName()
+{
+	return stateName;
+}
+
 void State::Render()
 {
 	// Draw The Border Over The State Fill So That The Fill Does Not Overlap The Border.

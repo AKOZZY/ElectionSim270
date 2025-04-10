@@ -3,6 +3,7 @@
 #include <vector>
 #include "raylib.h"
 #include "State.h"
+#include "StateTooltip.h"
 
 class Game
 {
@@ -16,9 +17,16 @@ public:
 	void Update();
 	void Render();
 private:
+	// States Vector
+	std::vector<State*> states{};
+	// State Tooltip
+	StateTooltip stateTooltip{};
 	// Reference States
 	State* california{};
+	State* nevada{};
+	// Reference State Vertex Points
 	std::vector<Vector2> californiaVertexPoints{};
+	std::vector<Vector2> nevadaVertexPoints{};
 };
 
 // Template Functions

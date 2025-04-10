@@ -10,7 +10,9 @@ public:
 	~State();
 
 	void AddVertexPoint(Vector2 vertexPoint);
+
 	Vector2 GetPosition();
+	const char* GetName();
 
 	void Render();
 	void RenderVertexPoints();
