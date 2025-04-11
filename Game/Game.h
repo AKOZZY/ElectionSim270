@@ -12,21 +12,24 @@ public:
 	Game();
 	// De-Init Game
 	~Game();
-
 	// Game Loop Functions
 	void Update();
 	void Render();
 private:
+	// State Borders
+	Texture2D stateBorders{};
 	// States Vector
 	std::vector<State*> states{};
 	// State Tooltip
 	StateTooltip stateTooltip{};
 	// Reference States
 	State* california{};
-	State* nevada{};
+	Texture2D californiaTexture{};
 	// Reference State Vertex Points
-	std::vector<Vector2> californiaVertexPoints{};
 	std::vector<Vector2> nevadaVertexPoints{};
+	// Map Offset
+	float mapOffsetX{ 120.0f };
+	float mapOffsetY{ 50.0f };
 };
 
 // Template Functions

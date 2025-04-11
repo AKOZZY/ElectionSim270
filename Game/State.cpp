@@ -1,18 +1,16 @@
 #include "State.h"
 
-State::State(const char* stateName, Texture2D stateBorder, Texture2D stateFill, Vector2 position)
+State::State(const char* stateName, Texture2D stateTexture, Vector2 position)
 {
 	this->stateName = stateName;
-	this->stateBorder = stateBorder;
-	this->stateFill = stateFill;
+	this->stateTexture = stateTexture;
 	this->position = position;
 }
 
 State::~State()
 {
 	// Unload State Textures
-	UnloadTexture(stateBorder);
-	UnloadTexture(stateFill);
+	UnloadTexture(stateTexture);
 }
 
 void State::AddVertexPoint(Vector2 vertexPoint)
@@ -32,9 +30,7 @@ const char* State::GetName()
 
 void State::Render()
 {
-	// Draw The Border Over The State Fill So That The Fill Does Not Overlap The Border.
-	DrawTexture(stateFill, position.x, position.y, WHITE);
-	DrawTexture(stateBorder, position.x, position.y, WHITE);
+	DrawTexture(stateTexture, position.x, position.y, likelyGOP);
 }
 
 void State::RenderVertexPoints()
