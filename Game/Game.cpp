@@ -3,12 +3,14 @@
 // Init
 Game::Game()
 {
+	selectedState = nullptr;
+
 	// Init State Borders
 	stateBorders = LoadTexture("assets/StateBorders.png");
 	
 	// Init California
 	californiaTexture = LoadTexture("assets/states/california.png");
-	california = new State("California", californiaTexture, Vector2{ 25, 150 });
+	california = new State("California", 54, 15357876, californiaTexture, Vector2{ 25, 150 });
 	// Plot Out The Vertex Points Of The State For Poly Collision
 	std::vector<Vector2> californiaVertexPoints
 	{
@@ -28,6 +30,9 @@ Game::Game()
 	}
 	// Add To Active States
 	states.push_back(california);
+
+	california->SetPartyPopularity(38.33, 58.47);
+	california->CalculatePartyPopularity();
 }
 
 // De-Init
@@ -42,7 +47,11 @@ Game::~Game()
 // Update Variables
 void Game::Update()
 {
-	
+	// Check What The Current Selected State Is (Whatever State The Mouse Pointer Is Currently Over)
+	if (selectedState != nullptr)
+	{
+		LogToConsole(selectedState->GetName());
+	}
 }
 
 // Draw
@@ -50,12 +59,11 @@ void Game::Render()
 {
 	// Render State Borders
 	DrawTextureEx(stateBorders, Vector2{ mapOffsetX, mapOffsetY }, 0, 1, WHITE);
-	DrawTextureEx(californiaTexture, Vector2{ mapOffsetX, mapOffsetY }, 0, 1, WHITE);
 
 	// Render States
 	for (int i = 0; i < states.size(); i++)
 	{
-		//states[i]->Render();
+		states[i]->Render(Vector2{ mapOffsetX , mapOffsetY });
 		//states[i]->RenderVertexPoints();
 	}
 
@@ -64,7 +72,12 @@ void Game::Render()
 	{
 		if (states[i]->IsMouseOverState(GetMousePosition()))
 		{
-			stateTooltip.Show(states[i]->GetName(), GetMousePosition());
+			selectedState = states[i];
+			stateTooltip.Show(selectedState, GetMousePosition());
+		}
+		else
+		{
+			selectedState = nullptr;
 		}
 	}
 }

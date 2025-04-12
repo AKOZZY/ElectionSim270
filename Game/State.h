@@ -1,38 +1,59 @@
 #pragma once
 #include <vector>
+#include <iostream>
 #include "raylib.h"
 
 class State
 {
 public:
 	// Create State
-	State(const char* stateName, Texture2D stateTexture, Vector2 position);
+	State(const char* stateName, int electoralVotes, int popularVotes, Texture2D stateTexture, Vector2 position);
 	~State();
 
 	void AddVertexPoint(Vector2 vertexPoint);
 
-	Vector2 GetPosition();
-	const char* GetName();
+	void SetPartyPopularity(float republican, float democrat);
+	void CalculatePartyPopularity();
 
-	void Render();
+	const char* GetName();
+	int GetElectoralVotes();
+	int GetPopularVotes();
+
+	float GetRepublicanPopularity();
+	float GetDemocraticPopularity();
+
+	void Render(Vector2 position);
 	void RenderVertexPoints();
+
+	void UpdateStateColor(float sum);
 
 	bool IsMouseOverState(Vector2 mousePosition);
 private:
 	// State Charactoristics
 	const char* stateName{};
+	int electoralVotes{};
+	int popularVotes{};
+
+	float republicanPopularity{};
+	float democraticPopularity{};
+
+	bool isDemocraticAhead{};
+	bool isRepublicanAhead{};
+
 	Texture2D stateTexture{};
-	Vector2 position{};
 	std::vector<Vector2> vertexPoints{};
 
 	// State Colors
-	Color tossup{ WHITE };
+	Color currentColor{};
 	// Republican
 	Color safeGOP{ 119, 31, 31, 255 };
 	Color likelyGOP{ 176, 64, 64, 255 };
 	Color leanGOP{ 233, 115, 115, 255 };
 	Color tiltGOP{ 207, 137, 128, 255 };
 	// Democrat
-	Color safeDEM{ 59, 83, 162, 255 };
+	Color safeDEM{ 37, 53, 128, 255 };
+	Color likelyDEM{ 50, 69, 163, 255 };
+	Color leanDEM{ 100, 124, 237, 255 };
+	Color tiltDEM{ 171, 184, 246, 255 };
 };
 

@@ -1,11 +1,12 @@
 #pragma once
 
 #include "raylib.h"
+#include "State.h"
 
 class StateTooltip
 {
 public:
 	// Show And Hide State Tooltip
-	void Show(const char* stateName, Vector2 mousePosition);
+	void Show(State* selectedState, Vector2 mousePosition);
 };
 

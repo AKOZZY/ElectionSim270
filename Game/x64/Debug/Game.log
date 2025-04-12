@@ -1,2 +1,14 @@
-﻿  Main.cpp
+﻿  StateTooltip.cpp
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(6,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(6,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(8,75): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(8,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(10,120): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(10,98): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(12,116): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(12,94): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(14,126): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(14,104): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(16,126): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(16,104): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   Game.vcxproj -> C:\Users\kenny\Documents\GitHub\ElectionSim270\x64\Debug\Game.exe

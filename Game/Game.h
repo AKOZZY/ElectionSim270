@@ -22,6 +22,7 @@ private:
 	std::vector<State*> states{};
 	// State Tooltip
 	StateTooltip stateTooltip{};
+	State* selectedState{};
 	// Reference States
 	State* california{};
 	Texture2D californiaTexture{};
