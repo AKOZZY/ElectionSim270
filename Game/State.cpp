@@ -27,6 +27,19 @@ void State::SetPartyPopularity(float republican, float democrat)
 
 void State::CalculatePartyPopularity()
 {
+	// Keep Popularity Percentages From Going Over 100% For Both Parties
+	if (republicanPopularity >= 100)
+	{
+		republicanPopularity = 100;
+		democraticPopularity = 0;
+	}
+	if (democraticPopularity >= 100)
+	{
+		democraticPopularity = 100;
+		republicanPopularity = 0;
+	}
+
+	// Calculate Which Party Is Ahead In The State
 	float sum{};
 	if (republicanPopularity > democraticPopularity)
 	{
@@ -40,7 +53,6 @@ void State::CalculatePartyPopularity()
 		isRepublicanAhead = false;
 		isDemocraticAhead = true;
 	}
-	std::cout << sum << "\n";
 	UpdateStateColor(sum);
 }
 
@@ -57,6 +69,20 @@ int State::GetElectoralVotes()
 int State::GetPopularVotes()
 {
 	return popularVotes;
+}
+
+void State::BoostRepublicanPopularity(float percentage, float modifier)
+{
+	percentage *= modifier;
+	republicanPopularity += percentage;
+	democraticPopularity = 100.0 - republicanPopularity;
+}
+
+void State::BoostDemocraticPopularity(float percentage, float modifier)
+{
+	percentage *= modifier;
+	democraticPopularity += percentage;
+	republicanPopularity = 100.0 - democraticPopularity;
 }
 
 float State::GetRepublicanPopularity()

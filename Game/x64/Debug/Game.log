@@ -1,14 +1,7 @@
-﻿  StateTooltip.cpp
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(6,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(6,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(8,75): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(8,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(10,120): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(10,98): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(12,116): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(12,94): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(14,126): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(14,104): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(16,126): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(16,104): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+﻿  Game.cpp
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(19,40): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(19,33): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(74,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(78,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(79,95): warning C4305: 'argument': truncation from 'double' to 'float'
   Game.vcxproj -> C:\Users\kenny\Documents\GitHub\ElectionSim270\x64\Debug\Game.exe

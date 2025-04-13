@@ -3,6 +3,8 @@
 #include <iostream>
 #include "raylib.h"
 
+
+
 class State
 {
 public:
@@ -19,6 +21,8 @@ public:
 	int GetElectoralVotes();
 	int GetPopularVotes();
 
+	void BoostRepublicanPopularity(float percentage, float modifier);
+	void BoostDemocraticPopularity(float percentage, float modifier);
 	float GetRepublicanPopularity();
 	float GetDemocraticPopularity();
 
@@ -28,6 +32,16 @@ public:
 	void UpdateStateColor(float sum);
 
 	bool IsMouseOverState(Vector2 mousePosition);
+
+	enum StateIdeology
+	{
+		PROGRESSIVE,
+		CENTERLEFT,
+		CENTER,
+		CENTERRIGHT,
+		CONSERVATIVE,
+	} ideology;
+
 private:
 	// State Charactoristics
 	const char* stateName{};

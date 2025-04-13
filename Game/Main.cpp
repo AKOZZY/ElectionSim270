@@ -15,6 +15,17 @@ int main(void)
 
     while (!WindowShouldClose())
     {
+        switch (game->gameState)
+        {
+        case IN_MAIN_MENU:
+            break;
+        case IN_GAME:
+            break;
+        case IN_RESULTS:
+            break;
+        default:
+            break;
+        }
         // Update
         game->Update();
 

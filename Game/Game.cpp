@@ -3,6 +3,11 @@
 // Init
 Game::Game()
 {
+	// Init Game Buttons
+	buttonVisitState = new Button("Visit State", 20, 120, 20, Vector2{ 0, 0 });
+	buttonCancelVisitState = new Button("Cancel", 20, 120, 20, Vector2{ 0, 20 });
+
+	// Set Selected State To Null
 	selectedState = nullptr;
 
 	// Init State Borders
@@ -11,6 +16,10 @@ Game::Game()
 	// Init California
 	californiaTexture = LoadTexture("assets/states/california.png");
 	california = new State("California", 54, 15357876, californiaTexture, Vector2{ 25, 150 });
+	california->SetPartyPopularity(41.53, 58.47);
+	california->CalculatePartyPopularity();
+	california->ideology = california->PROGRESSIVE;
+
 	// Plot Out The Vertex Points Of The State For Poly Collision
 	std::vector<Vector2> californiaVertexPoints
 	{
@@ -31,8 +40,7 @@ Game::Game()
 	// Add To Active States
 	states.push_back(california);
 
-	california->SetPartyPopularity(38.33, 58.47);
-	california->CalculatePartyPopularity();
+	
 }
 
 // De-Init
@@ -47,18 +55,45 @@ Game::~Game()
 // Update Variables
 void Game::Update()
 {
-	// Check What The Current Selected State Is (Whatever State The Mouse Pointer Is Currently Over)
-	if (selectedState != nullptr)
+	// Check If Mouse Is Over Buttons
+	buttonVisitState->MouseHover(GetMousePosition());
+	if (buttonVisitState->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 	{
-		LogToConsole(selectedState->GetName());
+		hasClickedStateVisit = true;
 	}
+	buttonCancelVisitState->MouseHover(GetMousePosition());
+	if (buttonCancelVisitState->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT) && hasClickedStateVisit)
+	{
+		hasClickedStateVisit = false;
+	}
+
+	// Visit State
+	if (hasClickedStateVisit && selectedState != nullptr && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+	{
+		hasClickedStateVisit = false;
+		selectedState->BoostRepublicanPopularity((float)GetRandomValue(1, 10), 0.1);
+	}
+
+	california->CalculatePartyPopularity();
+	if (IsKeyPressed(KEY_C)) california->BoostRepublicanPopularity((float)GetRandomValue(1, 10), 0.03);
+	if (IsKeyPressed(KEY_V)) california->BoostDemocraticPopularity((float)GetRandomValue(1, 10), 0.03);
 }
 
 // Draw
 void Game::Render()
 {
+	// Draw Buttons
+	buttonVisitState->Draw();
+
 	// Render State Borders
 	DrawTextureEx(stateBorders, Vector2{ mapOffsetX, mapOffsetY }, 0, 1, WHITE);
+
+	// Click A State To Visit It (Boosts Popularity Of Your Party In That State)
+	if (hasClickedStateVisit)
+	{
+		buttonCancelVisitState->Draw();
+		DrawText("Click A State To Visit! (Costs 2 Points)", 0, 50, 19, BLACK);
+	}
 
 	// Render States
 	for (int i = 0; i < states.size(); i++)
