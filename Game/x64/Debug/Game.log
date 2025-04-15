@@ -1,7 +1,5 @@
 ﻿  Game.cpp
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(19,40): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(19,33): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(74,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(78,95): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(79,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(228,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(243,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(247,72): warning C4305: 'argument': truncation from 'double' to 'float'
   Game.vcxproj -> C:\Users\kenny\Documents\GitHub\ElectionSim270\x64\Debug\Game.exe

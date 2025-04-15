@@ -9,7 +9,7 @@ class State
 {
 public:
 	// Create State
-	State(const char* stateName, int electoralVotes, int popularVotes, Texture2D stateTexture, Vector2 position);
+	State(const char* stateName, int electoralVotes, int popularVotes, Texture2D stateTexture);
 	~State();
 
 	void AddVertexPoint(Vector2 vertexPoint);
@@ -33,15 +33,8 @@ public:
 
 	bool IsMouseOverState(Vector2 mousePosition);
 
-	enum StateIdeology
-	{
-		PROGRESSIVE,
-		CENTERLEFT,
-		CENTER,
-		CENTERRIGHT,
-		CONSERVATIVE,
-	} ideology;
-
+	bool isDemocraticAhead{};
+	bool isRepublicanAhead{};
 private:
 	// State Charactoristics
 	const char* stateName{};
@@ -50,9 +43,6 @@ private:
 
 	float republicanPopularity{};
 	float democraticPopularity{};
-
-	bool isDemocraticAhead{};
-	bool isRepublicanAhead{};
 
 	Texture2D stateTexture{};
 	std::vector<Vector2> vertexPoints{};

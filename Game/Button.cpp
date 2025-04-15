@@ -37,13 +37,13 @@ void Button::Draw()
 {
 	if (!isMouseOverButton)
 	{
-		DrawRectangle(position.x, position.y, width, height, color);
-		DrawText(text.c_str(), position.x, position.y, fontSize, BLACK);
+		DrawRectangle(position.x, position.y, width, height, BLACK);
+		DrawText(text.c_str(), position.x, position.y, fontSize, WHITE);
 	}
 	else
 	{
-		DrawRectangle(position.x, position.y, width, height, selectedColor);
-		DrawText(text.c_str(), position.x, position.y, fontSize, WHITE);
+		DrawRectangle(position.x, position.y, width, height, WHITE);
+		DrawText(text.c_str(), position.x, position.y, fontSize, BLACK);
 	}
 }
 

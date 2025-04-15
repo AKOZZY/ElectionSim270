@@ -1,6 +1,6 @@
 #include "State.h"
 
-State::State(const char* stateName, int electoralVotes, int popularVotes, Texture2D stateTexture, Vector2 position)
+State::State(const char* stateName, int electoralVotes, int popularVotes, Texture2D stateTexture)
 {
 	this->stateName = stateName;
 	this->electoralVotes = electoralVotes;

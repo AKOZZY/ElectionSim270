@@ -17,7 +17,5 @@ private:
 	int width{};
 	int height{};
 	Vector2 position{};
-	Color color{ WHITE };
-	Color selectedColor{ BLACK };
 	Texture2D buttonSprite{};
 };

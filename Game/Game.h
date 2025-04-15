@@ -6,12 +6,19 @@
 #include "State.h"
 #include "StateTooltip.h"
 #include "Button.h"
+#include "Scenario.h"
 
 enum GameState
 {
 	IN_MAIN_MENU,
 	IN_GAME,
 	IN_RESULTS
+};
+
+enum MenuState
+{
+	DEFAULT,
+	IN_SCENARIO_SCREEN,
 };
 
 class Game
@@ -21,12 +28,23 @@ public:
 	Game();
 	// De-Init Game
 	~Game();
-	// Game Loop Functions
+	// In Menu Functions
+	void UpdateMenu();
+	void RenderMenu();
+	// In Game Functions
 	void Update();
 	void Render();
 	// Game State
 	GameState gameState{};
+	// Menu State
+	MenuState menuState{};
+	// Game Functions
+	void UpdateRepublicanElectoralVotes();
+	void UpdateDemocraticElectoralVotes();
 private:
+	// Party EVs
+	int democraticEVCount{};
+	int republicanEVCount{};
 	// State Borders
 	Texture2D stateBorders{};
 	// States Vector
@@ -38,15 +56,25 @@ private:
 	bool hasClickedStateVisit{};
 	// Reference States
 	State* california{};
-	Texture2D californiaTexture{};
+	State* nevada{};
+	State* alaska{};
+	State* hawaii{};
+	State* oregon{};
+	State* washington{};
 	// Reference State Vertex Points
 	std::vector<Vector2> nevadaVertexPoints{};
 	// Map Offset
 	float mapOffsetX{ 10.0f };
 	float mapOffsetY{ 80.0f };
+	// Menu 
+	Texture2D gameLogo{};
 	// Create Buttons
+	Button* buttonScenario2024{};
+	Button* buttonModernScenarios{};
 	Button* buttonVisitState{};
 	Button* buttonCancelVisitState{};
+	// Scenarios
+	Scenario* scenario2024{};
 };
 
 // Template Functions

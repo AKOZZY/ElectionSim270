@@ -13,27 +13,40 @@ int main(void)
     // Create Game Instance
     Game* game = new Game();
 
+    game->gameState = IN_GAME;
+
     while (!WindowShouldClose())
     {
         switch (game->gameState)
         {
         case IN_MAIN_MENU:
+            // Update
+            game->UpdateMenu();
+            // Render
+            BeginDrawing();
+            ClearBackground(SKYBLUE);
+            game->RenderMenu();
+            EndDrawing();
             break;
         case IN_GAME:
+            // Update
+            game->Update();
+            // Render
+            BeginDrawing();
+            ClearBackground(SKYBLUE);
+            game->Render();
+            EndDrawing();
             break;
         case IN_RESULTS:
+
             break;
         default:
+
             break;
         }
-        // Update
-        game->Update();
+        
 
-        // Render
-        BeginDrawing();
-        ClearBackground(SKYBLUE);
-        game->Render();
-        EndDrawing();
+        
     }
     CloseWindow();
 
