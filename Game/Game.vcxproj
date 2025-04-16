@@ -133,6 +133,7 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Party.cpp" />
     <ClCompile Include="Scenario.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="StateTooltip.cpp" />
@@ -140,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="Button.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Party.h" />
     <ClInclude Include="Scenario.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateTooltip.h" />

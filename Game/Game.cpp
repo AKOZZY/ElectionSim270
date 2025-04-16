@@ -3,6 +3,8 @@
 // Init
 Game::Game()
 {
+	
+
 	// Load Game Logo
 	gameLogo = LoadTexture("assets/ElectionSim270Logo.png");
 
@@ -47,7 +49,7 @@ Game::Game()
 	}
 	// Add To Active States
 	states.push_back(california);
-
+	
 	////////////////////////////////
 	//         NEVADA	          //
 	////////////////////////////////
@@ -171,7 +173,8 @@ void Game::UpdateMenu()
 		buttonScenario2024->MouseHover(GetMousePosition());
 		if (buttonScenario2024->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 		{
-
+			scenario->LoadScenario(SCENARIO_2024, states);
+			gameState = IN_GAME;
 		}
 	}
 }
@@ -225,7 +228,7 @@ void Game::Update()
 	if (hasClickedStateVisit && selectedState != nullptr && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 	{
 		hasClickedStateVisit = false;
-		selectedState->BoostRepublicanPopularity((float)GetRandomValue(1, 10), 0.1);
+		selectedState->BoostRepublicanPopularity((float)GetRandomValue(1, 10), 0.3);
 	}
 
 	// Update Party Popularity

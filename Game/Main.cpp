@@ -13,7 +13,7 @@ int main(void)
     // Create Game Instance
     Game* game = new Game();
 
-    game->gameState = IN_GAME;
+    game->gameState = IN_MAIN_MENU;
 
     while (!WindowShouldClose())
     {

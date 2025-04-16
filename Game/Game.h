@@ -74,7 +74,7 @@ private:
 	Button* buttonVisitState{};
 	Button* buttonCancelVisitState{};
 	// Scenarios
-	Scenario* scenario2024{};
+	Scenario* scenario{};
 };
 
 // Template Functions

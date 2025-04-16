@@ -61,9 +61,19 @@ const char* State::GetName()
 	return stateName;
 }
 
+void State::SetElectoralVotes(int ev)
+{
+	this->electoralVotes = ev;
+}
+
 int State::GetElectoralVotes()
 {
 	return electoralVotes;
+}
+
+void State::SetPopularVotes(int pv)
+{
+	this->popularVotes = pv;
 }
 
 int State::GetPopularVotes()
@@ -110,63 +120,84 @@ void State::RenderVertexPoints()
 
 void State::UpdateStateColor(float sum)
 {
-	// Check Which Party Is Ahead In The State
-	if (isDemocraticAhead)
+	if (isEnabled)
 	{
-		// Check If Party Popularity Is Greater Than 15
-		if (sum >= 15)
+		// Check Which Party Is Ahead In The State
+		if (isDemocraticAhead)
 		{
-			currentColor = safeDEM;
+			// Check If Party Popularity Is Greater Than 15
+			if (sum >= 15)
+			{
+				currentColor = safeDEM;
+			}
+			// Check If Party Popularity Is Less Than 15 But Greater Than 10
+			else if (sum <= 15 && sum > 10)
+			{
+				currentColor = likelyDEM;
+			}
+			// Check If Party Popularity Is Less Than 10 But Greater Than 5
+			else if (sum <= 10 && sum > 5)
+			{
+				currentColor = leanDEM;
+			}
+			// Check If Party Popularity Is Less Than 5
+			else if (sum <= 5)
+			{
+				currentColor = tiltDEM;
+			}
 		}
-		// Check If Party Popularity Is Less Than 15 But Greater Than 10
-		else if (sum <= 15 && sum > 10)
+		else if (isRepublicanAhead)
 		{
-			currentColor = likelyDEM;
-		}
-		// Check If Party Popularity Is Less Than 10 But Greater Than 5
-		else if (sum <= 10 && sum > 5)
-		{
-			currentColor = leanDEM;
-		}
-		// Check If Party Popularity Is Less Than 5
-		else if (sum <= 5)
-		{
-			currentColor = tiltDEM;
+			// Check If Party Popularity Is Greater Than 15
+			if (sum >= 15)
+			{
+				currentColor = safeGOP;
+			}
+			// Check If Party Popularity Is Less Than 15 But Greater Than 10
+			else if (sum <= 15 && sum > 10)
+			{
+				currentColor = likelyGOP;
+			}
+			// Check If Party Popularity Is Less Than 10 But Greater Than 5
+			else if (sum <= 10 && sum > 5)
+			{
+				currentColor = leanGOP;
+			}
+			// Check If Party Popularity Is Less Than 5
+			else if (sum <= 5)
+			{
+				currentColor = tiltGOP;
+			}
 		}
 	}
-	else if (isRepublicanAhead)
+	else
 	{
-		// Check If Party Popularity Is Greater Than 15
-		if (sum >= 15)
-		{
-			currentColor = safeGOP;
-		}
-		// Check If Party Popularity Is Less Than 15 But Greater Than 10
-		else if (sum <= 15 && sum > 10)
-		{
-			currentColor = likelyGOP;
-		}
-		// Check If Party Popularity Is Less Than 10 But Greater Than 5
-		else if (sum <= 10 && sum > 5)
-		{
-			currentColor = leanGOP;
-		}
-		// Check If Party Popularity Is Less Than 5
-		else if (sum <= 5)
-		{
-			currentColor = tiltGOP;
-		}
+		currentColor = Color{ 101, 101, 101, 255 };
 	}
+	
+}
+
+void State::Enable()
+{
+	isEnabled = true;
+}
+
+void State::Disable()
+{
+	isEnabled = false;
 }
 
 bool State::IsMouseOverState(Vector2 mousePosition)
 {
-	if (CheckCollisionPointPoly(mousePosition, vertexPoints.data(), vertexPoints.size()))
+	if (isEnabled)
 	{
-		return true;
-	}
-	else
-	{
-		return false;
+		if (CheckCollisionPointPoly(mousePosition, vertexPoints.data(), vertexPoints.size()))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 }

@@ -18,7 +18,9 @@ public:
 	void CalculatePartyPopularity();
 
 	const char* GetName();
+	void SetElectoralVotes(int ev);
 	int GetElectoralVotes();
+	void SetPopularVotes(int pv);
 	int GetPopularVotes();
 
 	void BoostRepublicanPopularity(float percentage, float modifier);
@@ -30,6 +32,9 @@ public:
 	void RenderVertexPoints();
 
 	void UpdateStateColor(float sum);
+
+	void Enable();
+	void Disable();
 
 	bool IsMouseOverState(Vector2 mousePosition);
 
@@ -43,6 +48,8 @@ private:
 
 	float republicanPopularity{};
 	float democraticPopularity{};
+
+	bool isEnabled{};
 
 	Texture2D stateTexture{};
 	std::vector<Vector2> vertexPoints{};
