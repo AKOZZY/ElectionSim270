@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 #include "raylib.h"
+#include "Party.h"
 
 
 
@@ -13,9 +14,13 @@ public:
 	~State();
 
 	void AddVertexPoint(Vector2 vertexPoint);
+	void AddParty(Party* party);
 
 	void SetPartyPopularity(float republican, float democrat);
 	void CalculatePartyPopularity();
+
+	void SetPartyPopularityIndex(int partyIndex, float percentage);
+	void UpdatePartyPopularity(int partyIndex, float percentage, float modifier);
 
 	const char* GetName();
 	void SetElectoralVotes(int ev);
@@ -40,6 +45,8 @@ public:
 
 	bool isDemocraticAhead{};
 	bool isRepublicanAhead{};
+
+	std::vector<Party*> partiesRunning{};
 private:
 	// State Charactoristics
 	const char* stateName{};

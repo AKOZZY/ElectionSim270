@@ -30,20 +30,12 @@ public:
 private:
 	// Scenario Year
 	std::string year{};
-	// States
-	std::vector<State> states{};
-	// Reference States
-	State* california{};
-	State* nevada{};
-	State* alaska{};
-	State* hawaii{};
-	State* oregon{};
-	State* washington{};
 	// Parties
 	std::vector<Party> parties{};
 	// Reference Parties
 	Party* republican{};
 	Party* democrat{};
+	Party* independent{};
 	// Candidates
 	std::vector<Candidate> candidates{};
 	// Number Of Candidates Running

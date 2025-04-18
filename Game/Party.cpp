@@ -11,3 +11,8 @@ Party::Party(std::string name, Color safe, Color likely, Color lean, Color tilt)
 	this->lean = lean;
 	this->tilt = tilt;
 }
+
+std::string Party::GetName()
+{
+	return name;
+}

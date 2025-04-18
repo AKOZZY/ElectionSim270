@@ -3,7 +3,8 @@
 // Init
 Game::Game()
 {
-	
+	// Create Scenario Object
+	scenario = new Scenario();
 
 	// Load Game Logo
 	gameLogo = LoadTexture("assets/ElectionSim270Logo.png");
@@ -158,6 +159,12 @@ Game::~Game()
 	{
 		delete(states[i]);
 	}
+	// Delete Objects
+	delete(scenario);
+	delete(buttonVisitState);
+	delete(buttonCancelVisitState);
+	delete(buttonModernScenarios);
+	delete(buttonScenario2024);
 }
 
 void Game::UpdateMenu()
@@ -228,7 +235,8 @@ void Game::Update()
 	if (hasClickedStateVisit && selectedState != nullptr && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 	{
 		hasClickedStateVisit = false;
-		selectedState->BoostRepublicanPopularity((float)GetRandomValue(1, 10), 0.3);
+		selectedState->UpdatePartyPopularity(1, (float)GetRandomValue(1, 10), 1);
+		LogToConsole(selectedState->partiesRunning[1]->GetName());
 	}
 
 	// Update Party Popularity

@@ -19,6 +19,14 @@ void State::AddVertexPoint(Vector2 vertexPoint)
 	vertexPoints.push_back(vertexPoint);
 }
 
+void State::AddParty(Party* party)
+{
+	if (party != nullptr)
+	{
+		partiesRunning.push_back(party);
+	}
+}
+
 void State::SetPartyPopularity(float republican, float democrat)
 {
 	this->republicanPopularity = republican;
@@ -54,6 +62,29 @@ void State::CalculatePartyPopularity()
 		isDemocraticAhead = true;
 	}
 	UpdateStateColor(sum);
+}
+
+void State::SetPartyPopularityIndex(int partyIndex, float percentage)
+{
+	partiesRunning[partyIndex]->partySupport = percentage;
+}
+
+void State::UpdatePartyPopularity(int partyIndex, float percentage, float modifier)
+{
+	float sum = percentage * modifier;
+	partiesRunning[partyIndex]->partySupport += sum;
+
+	float total{};
+
+	for (int i = 0; i < partiesRunning.size(); i++)
+	{
+		total += partiesRunning[i]->partySupport;
+	}
+
+	for (int i = 0; i < partiesRunning.size(); i++)
+	{
+		partiesRunning[i]->partySupport = (partiesRunning[i]->partySupport / total) * 100.0f;
+	}
 }
 
 const char* State::GetName()
