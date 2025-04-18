@@ -235,15 +235,17 @@ void Game::Update()
 	if (hasClickedStateVisit && selectedState != nullptr && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 	{
 		hasClickedStateVisit = false;
-		selectedState->UpdatePartyPopularity(1, (float)GetRandomValue(1, 10), 1);
+		selectedState->UpdatePartyPopularity("Independent", (float)GetRandomValue(1, 10), 0.1);
 		LogToConsole(selectedState->partiesRunning[1]->GetName());
 	}
 
 	// Update Party Popularity
 	for (int i = 0; i < states.size(); i++)
 	{
-		states[i]->CalculatePartyPopularity();
+		california->CalculateStateColor();
 	}
+
+	
 
 	if (IsKeyPressed(KEY_C))
 	{

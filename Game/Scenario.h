@@ -33,9 +33,9 @@ private:
 	// Parties
 	std::vector<Party> parties{};
 	// Reference Parties
-	Party* republican{};
-	Party* democrat{};
-	Party* independent{};
+	//Party* republican{};
+	//Party* democrat{};
+	//Party* independent{};
 	// Candidates
 	std::vector<Candidate> candidates{};
 	// Number Of Candidates Running

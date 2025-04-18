@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Scenario.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\Scenario.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Scenario.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\Scenario.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Scenario.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\Scenario.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Party.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -41,6 +29,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\StateTooltip.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\StateTooltip.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|solutionrelative:Game\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4CF640B-7335-4323-A834-8745B07E169C}|Game\\Game.vcxproj|C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\StateTooltip.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Main.cpp",
               "RelativeDocumentMoniker": "Game\\Main.cpp",
@@ -75,12 +75,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-10T14:40:10.435Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Game.h",
               "RelativeDocumentMoniker": "Game\\Game.h",
@@ -89,18 +88,17 @@
               "ViewState": "AgIAACcAAAAAAAAAAADwv0wAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-10T14:40:31.724Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Game.cpp",
               "RelativeDocumentMoniker": "Game\\Game.cpp",
               "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Game.cpp",
               "RelativeToolTip": "Game\\Game.cpp",
-              "ViewState": "AgIAANsAAAAAAAAAAAAAAPsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAANAAAAAAAAAAAAAewO0AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-10T14:40:07.406Z",
               "IsPinned": true,
@@ -108,26 +106,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Scenario.h",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Scenario.h",
               "RelativeDocumentMoniker": "Game\\Scenario.h",
               "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Scenario.h",
               "RelativeToolTip": "Game\\Scenario.h",
-              "ViewState": "AgIAAAEAAAAAAAAAAADwvxwAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-14T23:26:02.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Scenario.cpp",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Scenario.cpp",
               "RelativeDocumentMoniker": "Game\\Scenario.cpp",
               "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Scenario.cpp",
               "RelativeToolTip": "Game\\Scenario.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvyUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-15T12:53:59.773Z",
               "EditorCaption": ""
@@ -142,8 +140,7 @@
               "RelativeToolTip": "Game\\Button.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-13T22:15:34.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T22:15:34.515Z"
             },
             {
               "$type": "Document",
@@ -167,12 +164,11 @@
               "RelativeToolTip": "Game\\StateTooltip.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-10T19:53:55.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T19:53:55.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "StateTooltip.cpp",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\StateTooltip.cpp",
               "RelativeDocumentMoniker": "Game\\StateTooltip.cpp",
@@ -185,13 +181,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "State.h",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\State.h",
               "RelativeDocumentMoniker": "Game\\State.h",
               "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\State.h",
               "RelativeToolTip": "Game\\State.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwDAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-10T14:40:32.143Z",
               "EditorCaption": ""
@@ -204,14 +200,14 @@
               "RelativeDocumentMoniker": "Game\\State.cpp",
               "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\State.cpp",
               "RelativeToolTip": "Game\\State.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAIoAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAOEAAAAAAAAAAADwvwYBAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-10T14:40:10.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Party.cpp",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Party.cpp",
               "RelativeDocumentMoniker": "Game\\Party.cpp",
@@ -224,13 +220,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Party.h",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Party.h",
               "RelativeDocumentMoniker": "Game\\Party.h",
               "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Party.h",
               "RelativeToolTip": "Game\\Party.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-16T14:59:55.427Z",
               "EditorCaption": ""

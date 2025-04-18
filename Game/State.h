@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <iostream>
+#include <algorithm>
 #include "raylib.h"
 #include "Party.h"
 
@@ -19,8 +20,8 @@ public:
 	void SetPartyPopularity(float republican, float democrat);
 	void CalculatePartyPopularity();
 
-	void SetPartyPopularityIndex(int partyIndex, float percentage);
-	void UpdatePartyPopularity(int partyIndex, float percentage, float modifier);
+	void SetPartyPopularityIndex(std::string partyName, float percentage);
+	void UpdatePartyPopularity(std::string partyName, float percentage, float modifier);
 
 	const char* GetName();
 	void SetElectoralVotes(int ev);
@@ -37,6 +38,7 @@ public:
 	void RenderVertexPoints();
 
 	void UpdateStateColor(float sum);
+	void CalculateStateColor();
 
 	void Enable();
 	void Disable();
