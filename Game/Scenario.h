@@ -30,12 +30,6 @@ public:
 private:
 	// Scenario Year
 	std::string year{};
-	// Parties
-	std::vector<Party> parties{};
-	// Reference Parties
-	//Party* republican{};
-	//Party* democrat{};
-	//Party* independent{};
 	// Candidates
 	std::vector<Candidate> candidates{};
 	// Number Of Candidates Running

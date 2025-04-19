@@ -11,14 +11,11 @@ class State
 {
 public:
 	// Create State
-	State(const char* stateName, int electoralVotes, int popularVotes, Texture2D stateTexture);
+	State(const char* stateName, Texture2D stateTexture);
 	~State();
 
 	void AddVertexPoint(Vector2 vertexPoint);
 	void AddParty(Party* party);
-
-	void SetPartyPopularity(float republican, float democrat);
-	void CalculatePartyPopularity();
 
 	void SetPartyPopularityIndex(std::string partyName, float percentage);
 	void UpdatePartyPopularity(std::string partyName, float percentage, float modifier);
@@ -33,6 +30,8 @@ public:
 	void BoostDemocraticPopularity(float percentage, float modifier);
 	float GetRepublicanPopularity();
 	float GetDemocraticPopularity();
+
+	std::string GetMostPopularParty();
 
 	void Render(Vector2 position);
 	void RenderVertexPoints();

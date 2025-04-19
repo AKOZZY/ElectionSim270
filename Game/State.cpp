@@ -1,10 +1,8 @@
 #include "State.h"
 
-State::State(const char* stateName, int electoralVotes, int popularVotes, Texture2D stateTexture)
+State::State(const char* stateName, Texture2D stateTexture)
 {
 	this->stateName = stateName;
-	this->electoralVotes = electoralVotes;
-	this->popularVotes = popularVotes;
 	this->stateTexture = stateTexture;
 }
 
@@ -31,43 +29,6 @@ void State::AddParty(Party* party)
 	{
 		partiesRunning.push_back(party);
 	}
-}
-
-void State::SetPartyPopularity(float republican, float democrat)
-{
-	this->republicanPopularity = republican;
-	this->democraticPopularity = democrat;
-}
-
-void State::CalculatePartyPopularity()
-{
-	// Keep Popularity Percentages From Going Over 100% For Both Parties
-	if (republicanPopularity >= 100)
-	{
-		republicanPopularity = 100;
-		democraticPopularity = 0;
-	}
-	if (democraticPopularity >= 100)
-	{
-		democraticPopularity = 100;
-		republicanPopularity = 0;
-	}
-
-	// Calculate Which Party Is Ahead In The State
-	float sum{};
-	if (republicanPopularity > democraticPopularity)
-	{
-		sum = republicanPopularity - democraticPopularity;
-		isRepublicanAhead = true;
-		isDemocraticAhead = false;
-	}
-	else
-	{
-		sum = democraticPopularity - republicanPopularity;
-		isRepublicanAhead = false;
-		isDemocraticAhead = true;
-	}
-	UpdateStateColor(sum);
 }
 
 void State::SetPartyPopularityIndex(std::string partyName, float percentage)
@@ -151,6 +112,11 @@ float State::GetDemocraticPopularity()
 	return democraticPopularity;
 }
 
+std::string State::GetMostPopularParty()
+{
+	return partiesRunning[0]->GetName();
+}
+
 void State::Render(Vector2 position)
 {
 	DrawTexture(stateTexture, position.x, position.y, currentColor);
@@ -230,11 +196,6 @@ void State::CalculateStateColor()
 	{
 		return a->partySupport > b->partySupport;
 	});
-
-	std::cout << "Most popular parties:\n";
-	for (int i = 0; i < 2; ++i) {
-		std::cout << partiesRunning[i]->GetName() << " with popularity " << partiesRunning[i]->partySupport << "\n";
-	}
 
 	if (isEnabled)
 	{

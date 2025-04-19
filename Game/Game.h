@@ -41,6 +41,7 @@ public:
 	// Game Functions
 	void UpdateRepublicanElectoralVotes();
 	void UpdateDemocraticElectoralVotes();
+	int EVCalculator(std::string nameOfParty);
 private:
 	// Party EVs
 	int democraticEVCount{};
@@ -65,7 +66,7 @@ private:
 	std::vector<Vector2> nevadaVertexPoints{};
 	// Map Offset
 	float mapOffsetX{ 10.0f };
-	float mapOffsetY{ 80.0f };
+	float mapOffsetY{ 70.0f };
 	// Menu 
 	Texture2D gameLogo{};
 	// Create Buttons
