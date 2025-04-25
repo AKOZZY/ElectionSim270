@@ -39,8 +39,6 @@ public:
 	// Menu State
 	MenuState menuState{};
 	// Game Functions
-	void UpdateRepublicanElectoralVotes();
-	void UpdateDemocraticElectoralVotes();
 	int EVCalculator(std::string nameOfParty);
 private:
 	// Party EVs
@@ -62,6 +60,8 @@ private:
 	State* hawaii{};
 	State* oregon{};
 	State* washington{};
+	State* arizona{};
+	State* utah{};
 	// Reference State Vertex Points
 	std::vector<Vector2> nevadaVertexPoints{};
 	// Map Offset

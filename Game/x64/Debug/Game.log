@@ -1,5 +1,7 @@
 ﻿  Game.cpp
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(262,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(263,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(264,97): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(304,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(305,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(306,97): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Main.cpp
+  Generating Code...
   Game.vcxproj -> C:\Users\kenny\Documents\GitHub\ElectionSim270\x64\Debug\Game.exe

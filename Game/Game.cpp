@@ -141,6 +141,49 @@ Game::Game()
 		washington->AddVertexPoint(washingtonVertexPoints[i]);
 	}
 	states.push_back(washington);
+
+	////////////////////////////////
+	//         ARIZONA		      //
+	////////////////////////////////
+	arizona = new State("Arizona", LoadTexture("assets/states/arizona.png"));
+	std::vector<Vector2> arizonaVertexPoints
+	{
+		Vector2{94 + mapOffsetX, 212 + mapOffsetY},
+		Vector2{98 + mapOffsetX, 208 + mapOffsetY},
+		Vector2{95 + mapOffsetX, 202 + mapOffsetY},
+		Vector2{101 + mapOffsetX, 192 + mapOffsetY},
+		Vector2{96 + mapOffsetX, 184 + mapOffsetY},
+		Vector2{96 + mapOffsetX, 172 + mapOffsetY},
+		Vector2{101 + mapOffsetX, 172 + mapOffsetY},
+		Vector2{101 + mapOffsetX, 162 + mapOffsetY},
+		Vector2{149 + mapOffsetX, 162 + mapOffsetY},
+		Vector2{149 + mapOffsetX, 226 + mapOffsetY},
+		Vector2{128 + mapOffsetX, 226 + mapOffsetY},
+	};
+	for (int i = 0; i < arizonaVertexPoints.size(); i++)
+	{
+		arizona->AddVertexPoint(arizonaVertexPoints[i]);
+	}
+	states.push_back(arizona);
+
+	////////////////////////////////
+	//         UTAH				  //
+	////////////////////////////////
+	utah = new State("Utah", LoadTexture("assets/states/utah.png"));
+	std::vector<Vector2> utahVertexPoints
+	{
+		Vector2{101 + mapOffsetX, 99 + mapOffsetY},
+		Vector2{101 + mapOffsetX, 162 + mapOffsetY},
+		Vector2{149 + mapOffsetX, 162 + mapOffsetY},
+		Vector2{149 + mapOffsetX, 112 + mapOffsetY},
+		Vector2{130 + mapOffsetX, 112 + mapOffsetY},
+		Vector2{130 + mapOffsetX, 99 + mapOffsetY},
+	};
+	for (int i = 0; i < utahVertexPoints.size(); i++)
+	{
+		utah->AddVertexPoint(utahVertexPoints[i]);
+	}
+	states.push_back(utah);
 }
 
 // De-Init
@@ -229,7 +272,7 @@ void Game::Update()
 	if (hasClickedStateVisit && selectedState != nullptr && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 	{
 		hasClickedStateVisit = false;
-		selectedState->UpdatePartyPopularity("Independent", (float)GetRandomValue(1, 10), 5);
+		selectedState->UpdatePartyPopularity("Independent", (float)GetRandomValue(1, 10), 2);
 	}
 
 	// Update Party Popularity
@@ -252,19 +295,17 @@ void Game::Render()
 	DrawRectangle(570, 0, 300, 800, Color{ 0, 0, 0, 200 });
 
 	// Candidate Portraits
-	DrawRectangle(600, 20, 80, 96, WHITE);
-	DrawRectangle(700, 20, 80, 96, WHITE);
+	DrawRectangle(600, 20, 80, 112, WHITE);
+	DrawRectangle(700, 20, 80, 112, WHITE);
 
 	// Render EV's For Each Party
-
 	for (int i = 0; i < states[0]->partiesRunning.size(); i++)
 	{
 		float y = i * 20;
-		DrawText(states[0]->partiesRunning[i]->GetName().c_str(), 600, 350 + y, 20, WHITE);
+		DrawText(states[0]->partiesRunning[i]->GetName().c_str(), 600, 350 + y, 20, states[0]->partiesRunning[i]->safe);
 		DrawText(TextFormat(" - %i", EVCalculator(states[0]->partiesRunning[i]->GetName())), 720, 350 + y, 20, WHITE);
 		//DrawText(TextFormat("Republican - %i", EVCalculator("Republican")), 300, 350 + y, 20, WHITE);
 	}
-	
 
 	// Click A State To Visit It (Boosts Popularity Of Your Party In That State)
 	if (hasClickedStateVisit)
@@ -291,32 +332,6 @@ void Game::Render()
 			}
 		}
 	}
-}
-
-void Game::UpdateRepublicanElectoralVotes()
-{
-	int sumOfRepublicanEV = 0;
-	for (int i = 0; i < states.size(); i++)
-	{
-		if (states[i]->isRepublicanAhead)
-		{
-			sumOfRepublicanEV += states[i]->GetElectoralVotes();
-		}
-	}
-	republicanEVCount = sumOfRepublicanEV;
-}
-
-void Game::UpdateDemocraticElectoralVotes()
-{
-	int sumOfDemocratEV = 0;
-	for (int i = 0; i < states.size(); i++)
-	{
-		if (states[i]->isDemocraticAhead)
-		{
-			sumOfDemocratEV += states[i]->GetElectoralVotes();
-		}
-	}
-	democraticEVCount = sumOfDemocratEV;
 }
 
 int Game::EVCalculator(std::string nameOfParty)
