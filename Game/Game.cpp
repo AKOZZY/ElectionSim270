@@ -184,6 +184,59 @@ Game::Game()
 		utah->AddVertexPoint(utahVertexPoints[i]);
 	}
 	states.push_back(utah);
+
+	////////////////////////////////
+	//         IDAHO			  //
+	////////////////////////////////
+	idaho = new State("Idaho", LoadTexture("assets/states/idaho.png"));
+	std::vector<Vector2> idahoVertexPoints
+	{
+		Vector2{74 + mapOffsetX, 99 + mapOffsetY},
+		Vector2{130 + mapOffsetX, 99 + mapOffsetY},
+		Vector2{130 + mapOffsetX, 66 + mapOffsetY},
+		Vector2{126 + mapOffsetX, 64 + mapOffsetY},
+		Vector2{112 + mapOffsetX, 68 + mapOffsetY},
+		Vector2{102 + mapOffsetX, 52 + mapOffsetY},
+		Vector2{97 + mapOffsetX, 54 + mapOffsetY},
+		Vector2{96 + mapOffsetX, 43 + mapOffsetY},
+		Vector2{99 + mapOffsetX, 39 + mapOffsetY},
+		Vector2{86 + mapOffsetX, 27 + mapOffsetY},
+		Vector2{126 + mapOffsetX, 64 + mapOffsetY},
+		Vector2{82 + mapOffsetX, 17 + mapOffsetY},
+		Vector2{82 + mapOffsetX, 4 + mapOffsetY},
+		Vector2{73 + mapOffsetX, 4 + mapOffsetY},
+		Vector2{73 + mapOffsetX, 46 + mapOffsetY},
+		Vector2{79 + mapOffsetX, 57 + mapOffsetY},
+		Vector2{72 + mapOffsetX, 69 + mapOffsetY},
+	};
+	for (int i = 0; i < idahoVertexPoints.size(); i++)
+	{
+		idaho->AddVertexPoint(idahoVertexPoints[i]);
+	}
+	states.push_back(idaho);
+
+	////////////////////////////////
+	//         MONTANA			  //
+	////////////////////////////////
+	montana = new State("Montana", LoadTexture("assets/states/montana.png"));
+	std::vector<Vector2> montanaVertexPoints
+	{
+		Vector2{82 + mapOffsetX, 4 + mapOffsetY},
+		Vector2{82 + mapOffsetX, 19 + mapOffsetY},
+		Vector2{99 + mapOffsetX, 39 + mapOffsetY},
+		Vector2{98 + mapOffsetX, 54 + mapOffsetY},
+		Vector2{103 + mapOffsetX, 54 + mapOffsetY},
+		Vector2{113 + mapOffsetX, 68 + mapOffsetY},
+		Vector2{130 + mapOffsetX, 66 + mapOffsetY},
+		Vector2{130 + mapOffsetX, 60 + mapOffsetY},
+		Vector2{196 + mapOffsetX, 60 + mapOffsetY},
+		Vector2{196 + mapOffsetX, 5 + mapOffsetY},
+	};
+	for (int i = 0; i < montanaVertexPoints.size(); i++)
+	{
+		montana->AddVertexPoint(montanaVertexPoints[i]);
+	}
+	states.push_back(montana);
 }
 
 // De-Init
@@ -318,7 +371,6 @@ void Game::Render()
 	for (int i = 0; i < states.size(); i++)
 	{
 		states[i]->Render(Vector2{ mapOffsetX , mapOffsetY });
-		//states[i]->RenderVertexPoints();
 	}
 
 	// Show State Tooltips

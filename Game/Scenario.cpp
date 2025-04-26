@@ -141,6 +141,34 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				states[i]->SetPartyPopularityIndex("Republican", 60);
 				states[i]->SetPartyPopularityIndex("Democrat", 40);
 			}
+
+			// Init State
+			if (states[i]->GetName() == "Idaho")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(4);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(880218);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 60);
+				states[i]->SetPartyPopularityIndex("Democrat", 40);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Montana")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(4);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(583985);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 60);
+				states[i]->SetPartyPopularityIndex("Democrat", 40);
+			}
 		}
 	}
 	else if (id == SCENARIO_1860)
