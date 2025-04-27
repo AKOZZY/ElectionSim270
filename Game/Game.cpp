@@ -352,13 +352,13 @@ void Game::Render()
 	DrawRectangle(700, 20, 80, 112, WHITE);
 
 	// Render EV's For Each Party
-	for (int i = 0; i < states[0]->partiesRunning.size(); i++)
+	for (int i = 0; i < scenario->parties.size(); i++)
 	{
 		float y = i * 20;
-		DrawText(states[0]->partiesRunning[i]->GetName().c_str(), 600, 350 + y, 20, states[0]->partiesRunning[i]->safe);
-		DrawText(TextFormat(" - %i", EVCalculator(states[0]->partiesRunning[i]->GetName())), 720, 350 + y, 20, WHITE);
-		//DrawText(TextFormat("Republican - %i", EVCalculator("Republican")), 300, 350 + y, 20, WHITE);
+		DrawText(scenario->parties[i]->GetName().c_str(), 600, 350 + y, 20, scenario->parties[i]->safe);
+		DrawText(TextFormat(" - %i", EVCalculator(scenario->parties[i]->GetName())), 720, 350 + y, 20, WHITE);
 	}
+	
 
 	// Click A State To Visit It (Boosts Popularity Of Your Party In That State)
 	if (hasClickedStateVisit)

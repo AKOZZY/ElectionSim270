@@ -14,25 +14,29 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 {
 	if (id == SCENARIO_2024)
 	{
+		// Create Parties For Scenario
+		Party* republican = new Party("Republican", Color{ 191, 29, 41, 255 }, Color{ 255, 88, 101, 255 }, Color{ 233, 139, 152, 255 }, Color{ 207, 137, 128, 255 });
+		Party* democrat = new Party("Democrat", Color{ 28, 64, 140, 255 }, Color{ 87, 124, 204, 255 }, Color{ 138, 175, 255, 255 }, Color{ 148, 155, 179, 255 });
+		Party* independent = new Party("Independent", Color{ 195, 169, 41, 255 }, Color{ 208, 190, 98, 255 }, Color{ 255, 234, 131, 255 }, Color{ 204, 196, 158, 255 });
+
+		parties.push_back(republican);
+		parties.push_back(democrat);
+		parties.push_back(independent);
+
 		for (int i = 0; i < states.size(); i++)
 		{
-			if (states[i] != nullptr)
-			{
-				// Create Unique Party Objects for each state
-				Party* republican = new Party("Republican", Color{ 191, 29, 41, 255 }, Color{ 255, 88, 101, 255 }, Color{ 233, 139, 152, 255 }, Color{ 207, 137, 128, 255 });
-				Party* democrat = new Party("Democrat", Color{ 28, 64, 140, 255 }, Color{ 87, 124, 204, 255 }, Color{ 138, 175, 255, 255 }, Color{ 148, 155, 179, 255 });
-				Party* independent = new Party("Independent", Color{ 195, 169, 41, 255 }, Color{ 208, 190, 98, 255 }, Color{ 255, 234, 131, 255 }, Color{ 204, 196, 158, 255 });
-				//Party* american = new Party("American", Color{ 170, 165, 52, 255 }, Color{ 197, 190, 57, 255 }, Color{ 228, 222, 86, 255 }, Color{ 233, 229, 162, 255 });
+			// Create Parties For States
+			Party* republican = new Party("Republican", Color{ 191, 29, 41, 255 }, Color{ 255, 88, 101, 255 }, Color{ 233, 139, 152, 255 }, Color{ 207, 137, 128, 255 });
+			Party* democrat = new Party("Democrat", Color{ 28, 64, 140, 255 }, Color{ 87, 124, 204, 255 }, Color{ 138, 175, 255, 255 }, Color{ 148, 155, 179, 255 });
+			Party* independent = new Party("Independent", Color{ 195, 169, 41, 255 }, Color{ 208, 190, 98, 255 }, Color{ 255, 234, 131, 255 }, Color{ 204, 196, 158, 255 });
 
-				states[i]->AddParty(republican);
-				states[i]->AddParty(democrat);
-				states[i]->AddParty(independent);
-				//states[i]->AddParty(american);
-			}
-			
 			// Init State
 			if (states[i]->GetName() == "California")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+				states[i]->AddParty(independent);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -47,6 +51,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Oregon")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -61,6 +68,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Washington")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -75,6 +85,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Hawaii")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -89,6 +102,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Nevada")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -103,6 +119,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Alaska")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -117,6 +136,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Arizona")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -131,6 +153,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Utah")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -145,6 +170,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Idaho")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
@@ -159,6 +187,9 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			// Init State
 			if (states[i]->GetName() == "Montana")
 			{
+				states[i]->AddParty(republican);
+				states[i]->AddParty(democrat);
+
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes

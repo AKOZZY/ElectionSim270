@@ -18,6 +18,7 @@ struct Candidate
 	std::string lastName{};
 	std::string homeState{};
 	std::string party{};
+	Texture2D portrait{};
 	bool isRunningMate{};
 };
 
@@ -27,11 +28,14 @@ public:
 	Scenario();
 	~Scenario();
 	void LoadScenario(ScenarioID id, std::vector<State*> states);
+
+	std::vector<Party*> parties{};
 private:
 	// Scenario Year
 	std::string year{};
 	// Candidates
 	std::vector<Candidate> candidates{};
+	
 	// Number Of Candidates Running
 	int numOfCandidates{};
 };
