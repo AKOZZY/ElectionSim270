@@ -237,6 +237,262 @@ Game::Game()
 		montana->AddVertexPoint(montanaVertexPoints[i]);
 	}
 	states.push_back(montana);
+
+	////////////////////////////////
+	//         WYOMING			  //
+	////////////////////////////////
+	wyoming = new State("Wyoming", LoadTexture("assets/states/wyoming.png"));
+	std::vector<Vector2> wyomingVertexPoints
+	{
+		Vector2{130 + mapOffsetX, 112 + mapOffsetY},
+		Vector2{196 + mapOffsetX, 112 + mapOffsetY},
+		Vector2{196 + mapOffsetX, 60 + mapOffsetY},
+		Vector2{130 + mapOffsetX, 60 + mapOffsetY},
+	};
+	for (int i = 0; i < wyomingVertexPoints.size(); i++)
+	{
+		wyoming->AddVertexPoint(wyomingVertexPoints[i]);
+	}
+	states.push_back(wyoming);
+
+	////////////////////////////////
+	//         COLORADO			  //
+	////////////////////////////////
+	colorado = new State("Colorado", LoadTexture("assets/states/colorado.png"));
+	std::vector<Vector2> coloradoVertexPoints
+	{
+		Vector2{149 + mapOffsetX, 162 + mapOffsetY},
+		Vector2{216 + mapOffsetX, 162 + mapOffsetY},
+		Vector2{216 + mapOffsetX, 112 + mapOffsetY},
+		Vector2{149 + mapOffsetX, 112 + mapOffsetY},
+	};
+	for (int i = 0; i < coloradoVertexPoints.size(); i++)
+	{
+		colorado->AddVertexPoint(coloradoVertexPoints[i]);
+	}
+	states.push_back(colorado);
+
+	////////////////////////////////
+	//         NEW MEXICO		  //
+	////////////////////////////////
+	new_mexico = new State("New Mexico", LoadTexture("assets/states/newmexico.png"));
+	std::vector<Vector2> new_mexicoVertexPoints
+	{
+		Vector2{149 + mapOffsetX, 226 + mapOffsetY},
+		Vector2{157 + mapOffsetX, 226 + mapOffsetY},
+		Vector2{161 + mapOffsetX, 221 + mapOffsetY},
+		Vector2{173 + mapOffsetX, 220 + mapOffsetY},
+		Vector2{207 + mapOffsetX, 220 + mapOffsetY},
+		Vector2{207 + mapOffsetX, 162 + mapOffsetY},
+		Vector2{149 + mapOffsetX, 162 + mapOffsetY},
+	};
+	for (int i = 0; i < new_mexicoVertexPoints.size(); i++)
+	{
+		new_mexico->AddVertexPoint(new_mexicoVertexPoints[i]);
+	}
+	states.push_back(new_mexico);
+
+	////////////////////////////////
+	//         TEXAS		      //
+	////////////////////////////////
+	texas = new State("Texas", LoadTexture("assets/states/texas.png"));
+	std::vector<Vector2> texasVertexPoints
+	{
+		Vector2{174 + mapOffsetX, 221 + mapOffsetY},
+		Vector2{200 + mapOffsetX, 250 + mapOffsetY},
+		Vector2{206 + mapOffsetX, 250 + mapOffsetY},
+		Vector2{215 + mapOffsetX, 243 + mapOffsetY},
+		Vector2{223 + mapOffsetX, 245 + mapOffsetY},
+		Vector2{243 + mapOffsetX, 274 + mapOffsetY},
+		Vector2{260 + mapOffsetX, 284 + mapOffsetY},
+		Vector2{260 + mapOffsetX, 263 + mapOffsetY},
+		Vector2{294 + mapOffsetX, 244 + mapOffsetY},
+		Vector2{291 + mapOffsetX, 202 + mapOffsetY},
+		Vector2{236 + mapOffsetX, 190 + mapOffsetY},
+		Vector2{236 + mapOffsetX, 168 + mapOffsetY},
+		Vector2{208 + mapOffsetX, 168 + mapOffsetY},
+		Vector2{208 + mapOffsetX, 220 + mapOffsetY},
+	};
+	for (int i = 0; i < texasVertexPoints.size(); i++)
+	{
+		texas->AddVertexPoint(texasVertexPoints[i]);
+	}
+	states.push_back(texas);
+
+	////////////////////////////////
+	//         OKLAHOMA		      //
+	////////////////////////////////
+	oklahoma = new State("Oklahoma", LoadTexture("assets/states/oklahoma.png"));
+	std::vector<Vector2> oklahomaVertexPoints
+	{
+		Vector2{208 + mapOffsetX, 166 + mapOffsetY},
+		Vector2{237 + mapOffsetX, 166 + mapOffsetY},
+		Vector2{208 + mapOffsetX, 189 + mapOffsetY},
+		Vector2{262 + mapOffsetX, 198 + mapOffsetY},
+		Vector2{285 + mapOffsetX, 199 + mapOffsetY},
+		Vector2{285 + mapOffsetX, 163 + mapOffsetY},
+		Vector2{208 + mapOffsetX, 163 + mapOffsetY},
+	};
+	for (int i = 0; i < oklahomaVertexPoints.size(); i++)
+	{
+		oklahoma->AddVertexPoint(oklahomaVertexPoints[i]);
+	}
+	states.push_back(oklahoma);
+
+	////////////////////////////////
+	//         KANSAS		      //
+	////////////////////////////////
+	kansas = new State("Kansas", LoadTexture("assets/states/kansas.png"));
+	std::vector<Vector2> kansasVertexPoints
+	{
+		Vector2{217 + mapOffsetX, 161 + mapOffsetY},
+		Vector2{285 + mapOffsetX, 161 + mapOffsetY},
+		Vector2{285 + mapOffsetX, 136 + mapOffsetY},
+		Vector2{280 + mapOffsetX, 126 + mapOffsetY},
+		Vector2{217 + mapOffsetX, 126 + mapOffsetY},
+	};
+	for (int i = 0; i < kansasVertexPoints.size(); i++)
+	{
+		kansas->AddVertexPoint(kansasVertexPoints[i]);
+	}
+	states.push_back(kansas);
+
+	////////////////////////////////
+	//         NEBRASKA		      //
+	////////////////////////////////
+	nebraska = new State("Nebraska", LoadTexture("assets/states/nebraska.png"));
+	std::vector<Vector2> nebraskaVertexPoints
+	{
+		Vector2{197 + mapOffsetX, 111 + mapOffsetY},
+		Vector2{217 + mapOffsetX, 111 + mapOffsetY},
+		Vector2{217 + mapOffsetX, 124 + mapOffsetY},
+		Vector2{279 + mapOffsetX, 124 + mapOffsetY},
+		Vector2{260 + mapOffsetX, 89 + mapOffsetY},
+		Vector2{250 + mapOffsetX, 88 + mapOffsetY},
+		Vector2{197 + mapOffsetX, 88 + mapOffsetY},
+	};
+	for (int i = 0; i < nebraskaVertexPoints.size(); i++)
+	{
+		nebraska->AddVertexPoint(nebraskaVertexPoints[i]);
+	}
+	states.push_back(nebraska);
+
+	////////////////////////////////
+	//         SOUTH DAKOTA		  //
+	////////////////////////////////
+	south_dakota = new State("South Dakota", LoadTexture("assets/states/southdakota.png"));
+	std::vector<Vector2> south_dakotaVertexPoints
+	{
+		Vector2{197 + mapOffsetX, 86 + mapOffsetY},
+		Vector2{250 + mapOffsetX, 86 + mapOffsetY},
+		Vector2{268 + mapOffsetX, 93 + mapOffsetY},
+		Vector2{268 + mapOffsetX, 49 + mapOffsetY},
+		Vector2{197 + mapOffsetX, 49 + mapOffsetY},
+	};
+	for (int i = 0; i < south_dakotaVertexPoints.size(); i++)
+	{
+		south_dakota->AddVertexPoint(south_dakotaVertexPoints[i]);
+	}
+	states.push_back(south_dakota);
+
+	////////////////////////////////
+	//         NORTH DAKOTA		  //
+	////////////////////////////////
+	north_dakota = new State("North Dakota", LoadTexture("assets/states/northdakota.png"));
+	std::vector<Vector2> north_dakotaVertexPoints
+	{
+		Vector2{197 + mapOffsetX, 47 + mapOffsetY},
+		Vector2{197 + mapOffsetX, 267 + mapOffsetY},
+		Vector2{261 + mapOffsetX, 6 + mapOffsetY},
+		Vector2{197 + mapOffsetX, 6 + mapOffsetY},
+	};
+	for (int i = 0; i < north_dakotaVertexPoints.size(); i++)
+	{
+		north_dakota->AddVertexPoint(north_dakotaVertexPoints[i]);
+	}
+	states.push_back(north_dakota);
+
+	////////////////////////////////
+	//         MINNESOTA		  //
+	////////////////////////////////
+	minnesota = new State("Minnesota", LoadTexture("assets/states/minnesota.png"));
+	std::vector<Vector2> minnesotaVertexPoints
+	{
+		Vector2{270 + mapOffsetX, 79 + mapOffsetY},
+		Vector2{318 + mapOffsetX, 79 + mapOffsetY},
+		Vector2{304 + mapOffsetX, 65 + mapOffsetY},
+		Vector2{309 + mapOffsetX, 39 + mapOffsetY},
+		Vector2{332 + mapOffsetX, 20 + mapOffsetY},
+		Vector2{284 + mapOffsetX, 1 + mapOffsetY},
+		Vector2{263 + mapOffsetX, 6 + mapOffsetY},
+	};
+	for (int i = 0; i < minnesotaVertexPoints.size(); i++)
+	{
+		minnesota->AddVertexPoint(minnesotaVertexPoints[i]);
+	}
+	states.push_back(minnesota);
+
+	////////////////////////////////
+	//         IOWA				  //
+	////////////////////////////////
+	iowa = new State("Iowa", LoadTexture("assets/states/iowa.png"));
+	std::vector<Vector2> iowaVertexPoints
+	{
+		Vector2{277 + mapOffsetX, 117 + mapOffsetY},
+		Vector2{316 + mapOffsetX, 119 + mapOffsetY},
+		Vector2{328 + mapOffsetX, 101 + mapOffsetY},
+		Vector2{320 + mapOffsetX, 90 + mapOffsetY},
+		Vector2{318 + mapOffsetX, 81 + mapOffsetY},
+		Vector2{269 + mapOffsetX, 81 + mapOffsetY},
+	};
+	for (int i = 0; i < iowaVertexPoints.size(); i++)
+	{
+		iowa->AddVertexPoint(iowaVertexPoints[i]);
+	}
+	states.push_back(iowa);
+
+	////////////////////////////////
+	//         MISSOURI			  //
+	////////////////////////////////
+	missouri = new State("Missouri", LoadTexture("assets/states/missouri.png"));
+	std::vector<Vector2> missouriVertexPoints
+	{
+		Vector2{287 + mapOffsetX, 166 + mapOffsetY},
+		Vector2{329 + mapOffsetX, 166 + mapOffsetY},
+		Vector2{329 + mapOffsetX, 172 + mapOffsetY},
+		Vector2{334 + mapOffsetX, 172 + mapOffsetY},
+		Vector2{338 + mapOffsetX, 161 + mapOffsetY},
+		Vector2{327 + mapOffsetX, 146 + mapOffsetY},
+		Vector2{328 + mapOffsetX, 138 + mapOffsetY},
+		Vector2{316 + mapOffsetX, 126 + mapOffsetY},
+		Vector2{315 + mapOffsetX, 119 + mapOffsetY},
+		Vector2{278 + mapOffsetX, 119 + mapOffsetY},
+	};
+	for (int i = 0; i < missouriVertexPoints.size(); i++)
+	{
+		missouri->AddVertexPoint(missouriVertexPoints[i]);
+	}
+	states.push_back(missouri);
+
+	////////////////////////////////
+	//         ARKANSAS			  //
+	////////////////////////////////
+	arkansas = new State("Arkansas", LoadTexture("assets/states/arkansas.png"));
+	std::vector<Vector2> arkansasVertexPoints
+	{
+		Vector2{287 + mapOffsetX, 200 + mapOffsetY},
+		Vector2{293 + mapOffsetX, 206 + mapOffsetY},
+		Vector2{319 + mapOffsetX, 206 + mapOffsetY},
+		Vector2{320 + mapOffsetX, 197 + mapOffsetY},
+		Vector2{332 + mapOffsetX, 174 + mapOffsetY},
+		Vector2{330 + mapOffsetX, 168 + mapOffsetY},
+		Vector2{287 + mapOffsetX, 168 + mapOffsetY},
+	};
+	for (int i = 0; i < arkansasVertexPoints.size(); i++)
+	{
+		arkansas->AddVertexPoint(arkansasVertexPoints[i]);
+	}
+	states.push_back(arkansas);
 }
 
 // De-Init

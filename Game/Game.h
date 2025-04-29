@@ -64,6 +64,19 @@ private:
 	State* utah{};
 	State* idaho{};
 	State* montana{};
+	State* wyoming{};
+	State* colorado{};
+	State* new_mexico{};
+	State* texas{};
+	State* oklahoma{};
+	State* kansas{};
+	State* nebraska{};
+	State* south_dakota{};
+	State* north_dakota{};
+	State* minnesota{};
+	State* iowa{};
+	State* missouri{};
+	State* arkansas{};
 	// Reference State Vertex Points
 	std::vector<Vector2> nevadaVertexPoints{};
 	// Map Offset
