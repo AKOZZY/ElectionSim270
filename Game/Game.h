@@ -77,6 +77,34 @@ private:
 	State* iowa{};
 	State* missouri{};
 	State* arkansas{};
+	State* louisiana{};
+	State* wisconsin{};
+	State* illinois{};
+	State* michigan{};
+	State* indiana{};
+	State* ohio{}; // lol
+	State* pennsylvania{};
+	State* new_york{};
+	State* new_jersey{};
+	State* vermont{};
+	State* new_hampshire{};
+	State* maine{};
+	State* massachusetts{};
+	State* connecticut{};
+	State* rhode_island{};
+	State* delaware{};
+	State* maryland{};
+	State* florida{};
+	State* mississippi{};
+	State* alabama{};
+	State* georgia{};
+	State* south_carolina{};
+	State* tennessee{};
+	State* kentucky{};
+	State* west_virginia{};
+	State* virginia{};
+	State* north_carolina{};
+	State* dc{};
 	// Reference State Vertex Points
 	std::vector<Vector2> nevadaVertexPoints{};
 	// Map Offset

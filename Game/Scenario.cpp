@@ -355,6 +355,398 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				states[i]->SetPartyPopularityIndex("Republican", 60);
 				states[i]->SetPartyPopularityIndex("Democrat", 40);
 			}
+
+			// Init State
+			if (states[i]->GetName() == "Louisiana")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(8);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(1975375);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 60);
+				states[i]->SetPartyPopularityIndex("Democrat", 40);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Wisconsin")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(10);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(3365855);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 52);
+				states[i]->SetPartyPopularityIndex("Democrat", 48);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Illinois")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(19);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(5511942);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 44);
+				states[i]->SetPartyPopularityIndex("Democrat", 56);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Michigan")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(15);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(5553169);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 48);
+				states[i]->SetPartyPopularityIndex("Democrat", 52);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Indiana")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(11);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(2883950);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 60);
+				states[i]->SetPartyPopularityIndex("Democrat", 40);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Ohio")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(17);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(5713815);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 56);
+				states[i]->SetPartyPopularityIndex("Democrat", 44);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Pennsylvania")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(19);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(6966350);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 51);
+				states[i]->SetPartyPopularityIndex("Democrat", 49);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "New York")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(28);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(8198094);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 44);
+				states[i]->SetPartyPopularityIndex("Democrat", 56);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "New Jersey")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(14);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(4188928);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 44);
+				states[i]->SetPartyPopularityIndex("Democrat", 56);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Vermont")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(3);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(355186);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 40);
+				states[i]->SetPartyPopularityIndex("Democrat", 60);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "New Hampshire")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(4);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(814011);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 48);
+				states[i]->SetPartyPopularityIndex("Democrat", 52);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Maine")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(4);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(813629);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 45);
+				states[i]->SetPartyPopularityIndex("Democrat", 55);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Massachusetts")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(11);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(3377821);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 30);
+				states[i]->SetPartyPopularityIndex("Democrat", 70);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Connecticut")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(7);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(1728971);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 30);
+				states[i]->SetPartyPopularityIndex("Democrat", 70);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Rhode Island")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(4);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(499562);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 30);
+				states[i]->SetPartyPopularityIndex("Democrat", 70);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Delaware")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(3);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(504109);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 40);
+				states[i]->SetPartyPopularityIndex("Democrat", 60);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Maryland")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(10);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(2938127);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 30);
+				states[i]->SetPartyPopularityIndex("Democrat", 70);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Florida")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(30);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(10793163);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 56);
+				states[i]->SetPartyPopularityIndex("Democrat", 44);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Mississippi")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(6);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(1214412);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 60);
+				states[i]->SetPartyPopularityIndex("Democrat", 40);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Alabama")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(9);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(2235028);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 60);
+				states[i]->SetPartyPopularityIndex("Democrat", 40);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Georgia")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(16);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(5211134);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 51);
+				states[i]->SetPartyPopularityIndex("Democrat", 49);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "South Carolina")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(9);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(2512199);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 70);
+				states[i]->SetPartyPopularityIndex("Democrat", 30);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Tennessee")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(11);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(3023130);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 70);
+				states[i]->SetPartyPopularityIndex("Democrat", 30);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Kentucky")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(8);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(2041537);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 70);
+				states[i]->SetPartyPopularityIndex("Democrat", 30);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "West Virginia")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(4);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(747865);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 70);
+				states[i]->SetPartyPopularityIndex("Democrat", 30);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "Virginia")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(13);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(4410480);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 45);
+				states[i]->SetPartyPopularityIndex("Democrat", 55);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "North Carolina")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(16);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(5613798);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 53);
+				states[i]->SetPartyPopularityIndex("Democrat", 47);
+			}
+
+			// Init State
+			if (states[i]->GetName() == "D. C")
+			{
+				// Enable
+				states[i]->Enable();
+				// Set Electoral Votes
+				states[i]->SetElectoralVotes(3);
+				// Set Popular Votes
+				states[i]->SetPopularVotes(315261);
+				// Set Party Popularity In State
+				states[i]->SetPartyPopularityIndex("Republican", 5);
+				states[i]->SetPartyPopularityIndex("Democrat", 95);
+			}
 		}
 	}
 	else if (id == SCENARIO_1860)
