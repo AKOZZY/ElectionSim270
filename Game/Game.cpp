@@ -16,7 +16,7 @@ Game::Game()
 	buttonCancelSimulate = new Button("Stop", 20, 120, 20, Vector2{ 650, 220 });
 
 	// Init Menu Buttons
-	buttonModernScenarios = new Button("Modern (1960-2024)", 20, 200, 20, Vector2{ 0, 200 });
+	buttonModernScenarios = new Button("Select Year", 20, 200, 20, Vector2{ 0, 200 });
 
 	// Play Scenario Buttons
 	buttonScenario2024 = new Button("2024", 20, 120, 20, Vector2{ 475, 20 });
@@ -1059,7 +1059,7 @@ void Game::UpdateMenu()
 		buttonScenario2024->MouseHover(GetMousePosition());
 		if (buttonScenario2024->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 		{
-			scenario->LoadScenario(SCENARIO_2024, states);
+			scenario->LoadScenario(SCENARIO_1860, states);
 			gameState = IN_GAME;
 		}
 	}

@@ -84,6 +84,11 @@ void State::UpdatePartyPopularityIndex(int index, float percentage, float modifi
 	}
 }
 
+void State::SetName(const char* name)
+{
+	this->stateName = name;
+}
+
 const char* State::GetName()
 {
 	return stateName;

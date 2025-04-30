@@ -22,6 +22,7 @@ public:
 	void UpdatePartyPopularity(std::string partyName, float percentage, float modifier);
 	void UpdatePartyPopularityIndex(int index, float percentage, float modifier);
 
+	void SetName(const char* name);
 	const char* GetName();
 	void SetElectoralVotes(int ev);
 	int GetElectoralVotes();
