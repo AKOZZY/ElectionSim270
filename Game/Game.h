@@ -34,6 +34,7 @@ public:
 	// In Game Functions
 	void Update();
 	void Render();
+	void RandomizeSupport();
 	// Game State
 	GameState gameState{};
 	// Menu State
@@ -41,9 +42,9 @@ public:
 	// Game Functions
 	int EVCalculator(std::string nameOfParty);
 private:
-	// Party EVs
-	int democraticEVCount{};
-	int republicanEVCount{};
+	// Timers
+	float timer{};
+	float updateInterval{ 0.5 };
 	// State Borders
 	Texture2D stateBorders{};
 	// States Vector
@@ -53,6 +54,7 @@ private:
 	State* selectedState{};
 	// State Visit
 	bool hasClickedStateVisit{};
+	bool hasClickedSimulate{};
 	// Reference States
 	State* california{};
 	State* nevada{};
@@ -82,7 +84,7 @@ private:
 	State* illinois{};
 	State* michigan{};
 	State* indiana{};
-	State* ohio{}; // lol
+	State* ohio{};
 	State* pennsylvania{};
 	State* new_york{};
 	State* new_jersey{};
@@ -117,6 +119,8 @@ private:
 	Button* buttonModernScenarios{};
 	Button* buttonVisitState{};
 	Button* buttonCancelVisitState{};
+	Button* buttonSimulate{};
+	Button* buttonCancelSimulate{};
 	// Scenarios
 	Scenario* scenario{};
 };

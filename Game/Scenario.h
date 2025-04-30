@@ -25,8 +25,6 @@ struct Candidate
 class Scenario
 {
 public:
-	Scenario();
-	~Scenario();
 	void LoadScenario(ScenarioID id, std::vector<State*> states);
 
 	std::vector<Party*> parties{};

@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    const int screenWidth = 900;
+    const int screenWidth = 850;
     const int screenHeight = 450;
 
     InitWindow(screenWidth, screenHeight, "Election Simulator 270");

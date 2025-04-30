@@ -17,8 +17,10 @@ public:
 	void AddVertexPoint(Vector2 vertexPoint);
 	void AddParty(Party* party);
 
-	void SetPartyPopularityIndex(std::string partyName, float percentage);
+	void SetPartyPopularity(std::string partyName, float percentage);
+
 	void UpdatePartyPopularity(std::string partyName, float percentage, float modifier);
+	void UpdatePartyPopularityIndex(int index, float percentage, float modifier);
 
 	const char* GetName();
 	void SetElectoralVotes(int ev);

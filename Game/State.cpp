@@ -31,7 +31,7 @@ void State::AddParty(Party* party)
 	}
 }
 
-void State::SetPartyPopularityIndex(std::string partyName, float percentage)
+void State::SetPartyPopularity(std::string partyName, float percentage)
 {
 	for (int i = 0; i < partiesRunning.size(); i++)
 	{
@@ -48,6 +48,27 @@ void State::UpdatePartyPopularity(std::string partyName, float percentage, float
 	for (int i = 0; i < partiesRunning.size(); i++)
 	{
 		if (partyName == partiesRunning[i]->GetName()) 
+		{
+			partiesRunning[i]->partySupport += sum;
+		}
+	}
+	float total{};
+	for (int i = 0; i < partiesRunning.size(); i++)
+	{
+		total += partiesRunning[i]->partySupport;
+	}
+	for (int i = 0; i < partiesRunning.size(); i++)
+	{
+		partiesRunning[i]->partySupport = (partiesRunning[i]->partySupport / total) * 100.0f;
+	}
+}
+
+void State::UpdatePartyPopularityIndex(int index, float percentage, float modifier)
+{
+	float sum = percentage * modifier;
+	for (int i = 0; i < partiesRunning.size(); i++)
+	{
+		if (i == index)
 		{
 			partiesRunning[i]->partySupport += sum;
 		}

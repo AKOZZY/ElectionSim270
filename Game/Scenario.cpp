@@ -1,15 +1,5 @@
 #include "Scenario.h"
 
-Scenario::Scenario()
-{
-
-}
-
-Scenario::~Scenario()
-{
-
-}
-
 void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 {
 	if (id == SCENARIO_2024)
@@ -44,8 +34,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(15357876);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 40);
-				states[i]->SetPartyPopularityIndex("Democrat", 60);
+				states[i]->SetPartyPopularity("Republican", 40);
+				states[i]->SetPartyPopularity("Democrat", 60);
 			}
 
 			// Init State
@@ -58,8 +48,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(2160080);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 44);
-				states[i]->SetPartyPopularityIndex("Democrat", 56);
+				states[i]->SetPartyPopularity("Republican", 44);
+				states[i]->SetPartyPopularity("Democrat", 56);
 			}
 
 			// Init State
@@ -72,8 +62,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(3776772);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 40);
-				states[i]->SetPartyPopularityIndex("Democrat", 60);
+				states[i]->SetPartyPopularity("Republican", 40);
+				states[i]->SetPartyPopularity("Democrat", 60);
 			}
 
 			// Init State
@@ -86,8 +76,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(506705);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 40);
-				states[i]->SetPartyPopularityIndex("Democrat", 60);
+				states[i]->SetPartyPopularity("Republican", 40);
+				states[i]->SetPartyPopularity("Democrat", 60);
 			}
 
 			// Init State
@@ -100,8 +90,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1456402);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 47);
-				states[i]->SetPartyPopularityIndex("Democrat", 53);
+				states[i]->SetPartyPopularity("Republican", 47);
+				states[i]->SetPartyPopularity("Democrat", 53);
 			}
 
 			// Init State
@@ -114,8 +104,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(324484);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 55);
-				states[i]->SetPartyPopularityIndex("Democrat", 45);
+				states[i]->SetPartyPopularity("Republican", 55);
+				states[i]->SetPartyPopularity("Democrat", 45);
 			}
 
 			// Init State
@@ -128,8 +118,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(3353102);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 52);
-				states[i]->SetPartyPopularityIndex("Democrat", 48);
+				states[i]->SetPartyPopularity("Republican", 52);
+				states[i]->SetPartyPopularity("Democrat", 48);
 			}
 
 			// Init State
@@ -142,8 +132,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1446384);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -156,8 +146,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(880218);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -170,8 +160,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(583985);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -184,8 +174,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(262160);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -198,8 +188,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(3105600);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 44);
-				states[i]->SetPartyPopularityIndex("Democrat", 56);
+				states[i]->SetPartyPopularity("Republican", 44);
+				states[i]->SetPartyPopularity("Democrat", 56);
 			}
 
 			// Init State
@@ -212,8 +202,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(902193);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 45);
-				states[i]->SetPartyPopularityIndex("Democrat", 55);
+				states[i]->SetPartyPopularity("Republican", 45);
+				states[i]->SetPartyPopularity("Democrat", 55);
 			}
 
 			// Init State
@@ -226,8 +216,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(11228847);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 56);
-				states[i]->SetPartyPopularityIndex("Democrat", 44);
+				states[i]->SetPartyPopularity("Republican", 56);
+				states[i]->SetPartyPopularity("Democrat", 44);
 			}
 
 			// Init State
@@ -240,8 +230,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1535812);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -254,8 +244,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1303655);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -268,8 +258,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(934811);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -282,8 +272,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(418940);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -296,8 +286,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(358832);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -310,8 +300,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(3176011);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 50);
-				states[i]->SetPartyPopularityIndex("Democrat", 60);
+				states[i]->SetPartyPopularity("Republican", 50);
+				states[i]->SetPartyPopularity("Democrat", 60);
 			}
 
 			// Init State
@@ -324,8 +314,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1634297);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 56);
-				states[i]->SetPartyPopularityIndex("Democrat", 44);
+				states[i]->SetPartyPopularity("Republican", 56);
+				states[i]->SetPartyPopularity("Democrat", 44);
 			}
 
 			// Init State
@@ -338,8 +328,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(2952585);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -352,8 +342,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1156146);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -366,8 +356,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1975375);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -380,8 +370,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(3365855);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 52);
-				states[i]->SetPartyPopularityIndex("Democrat", 48);
+				states[i]->SetPartyPopularity("Republican", 52);
+				states[i]->SetPartyPopularity("Democrat", 48);
 			}
 
 			// Init State
@@ -394,8 +384,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(5511942);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 44);
-				states[i]->SetPartyPopularityIndex("Democrat", 56);
+				states[i]->SetPartyPopularity("Republican", 44);
+				states[i]->SetPartyPopularity("Democrat", 56);
 			}
 
 			// Init State
@@ -408,8 +398,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(5553169);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 48);
-				states[i]->SetPartyPopularityIndex("Democrat", 52);
+				states[i]->SetPartyPopularity("Republican", 48);
+				states[i]->SetPartyPopularity("Democrat", 52);
 			}
 
 			// Init State
@@ -422,8 +412,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(2883950);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -436,8 +426,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(5713815);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 56);
-				states[i]->SetPartyPopularityIndex("Democrat", 44);
+				states[i]->SetPartyPopularity("Republican", 56);
+				states[i]->SetPartyPopularity("Democrat", 44);
 			}
 
 			// Init State
@@ -450,8 +440,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(6966350);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 51);
-				states[i]->SetPartyPopularityIndex("Democrat", 49);
+				states[i]->SetPartyPopularity("Republican", 51);
+				states[i]->SetPartyPopularity("Democrat", 49);
 			}
 
 			// Init State
@@ -464,8 +454,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(8198094);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 44);
-				states[i]->SetPartyPopularityIndex("Democrat", 56);
+				states[i]->SetPartyPopularity("Republican", 44);
+				states[i]->SetPartyPopularity("Democrat", 56);
 			}
 
 			// Init State
@@ -478,8 +468,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(4188928);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 44);
-				states[i]->SetPartyPopularityIndex("Democrat", 56);
+				states[i]->SetPartyPopularity("Republican", 44);
+				states[i]->SetPartyPopularity("Democrat", 56);
 			}
 
 			// Init State
@@ -492,8 +482,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(355186);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 40);
-				states[i]->SetPartyPopularityIndex("Democrat", 60);
+				states[i]->SetPartyPopularity("Republican", 40);
+				states[i]->SetPartyPopularity("Democrat", 60);
 			}
 
 			// Init State
@@ -506,8 +496,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(814011);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 48);
-				states[i]->SetPartyPopularityIndex("Democrat", 52);
+				states[i]->SetPartyPopularity("Republican", 48);
+				states[i]->SetPartyPopularity("Democrat", 52);
 			}
 
 			// Init State
@@ -520,8 +510,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(813629);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 45);
-				states[i]->SetPartyPopularityIndex("Democrat", 55);
+				states[i]->SetPartyPopularity("Republican", 45);
+				states[i]->SetPartyPopularity("Democrat", 55);
 			}
 
 			// Init State
@@ -534,8 +524,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(3377821);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 30);
-				states[i]->SetPartyPopularityIndex("Democrat", 70);
+				states[i]->SetPartyPopularity("Republican", 30);
+				states[i]->SetPartyPopularity("Democrat", 70);
 			}
 
 			// Init State
@@ -548,8 +538,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1728971);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 30);
-				states[i]->SetPartyPopularityIndex("Democrat", 70);
+				states[i]->SetPartyPopularity("Republican", 30);
+				states[i]->SetPartyPopularity("Democrat", 70);
 			}
 
 			// Init State
@@ -562,8 +552,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(499562);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 30);
-				states[i]->SetPartyPopularityIndex("Democrat", 70);
+				states[i]->SetPartyPopularity("Republican", 30);
+				states[i]->SetPartyPopularity("Democrat", 70);
 			}
 
 			// Init State
@@ -576,8 +566,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(504109);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 40);
-				states[i]->SetPartyPopularityIndex("Democrat", 60);
+				states[i]->SetPartyPopularity("Republican", 40);
+				states[i]->SetPartyPopularity("Democrat", 60);
 			}
 
 			// Init State
@@ -590,8 +580,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(2938127);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 30);
-				states[i]->SetPartyPopularityIndex("Democrat", 70);
+				states[i]->SetPartyPopularity("Republican", 30);
+				states[i]->SetPartyPopularity("Democrat", 70);
 			}
 
 			// Init State
@@ -604,8 +594,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(10793163);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 56);
-				states[i]->SetPartyPopularityIndex("Democrat", 44);
+				states[i]->SetPartyPopularity("Republican", 56);
+				states[i]->SetPartyPopularity("Democrat", 44);
 			}
 
 			// Init State
@@ -618,8 +608,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1214412);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -632,8 +622,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(2235028);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 60);
-				states[i]->SetPartyPopularityIndex("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 60);
+				states[i]->SetPartyPopularity("Democrat", 40);
 			}
 
 			// Init State
@@ -646,8 +636,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(5211134);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 51);
-				states[i]->SetPartyPopularityIndex("Democrat", 49);
+				states[i]->SetPartyPopularity("Republican", 51);
+				states[i]->SetPartyPopularity("Democrat", 49);
 			}
 
 			// Init State
@@ -660,8 +650,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(2512199);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 70);
-				states[i]->SetPartyPopularityIndex("Democrat", 30);
+				states[i]->SetPartyPopularity("Republican", 70);
+				states[i]->SetPartyPopularity("Democrat", 30);
 			}
 
 			// Init State
@@ -674,8 +664,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(3023130);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 70);
-				states[i]->SetPartyPopularityIndex("Democrat", 30);
+				states[i]->SetPartyPopularity("Republican", 70);
+				states[i]->SetPartyPopularity("Democrat", 30);
 			}
 
 			// Init State
@@ -688,8 +678,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(2041537);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 70);
-				states[i]->SetPartyPopularityIndex("Democrat", 30);
+				states[i]->SetPartyPopularity("Republican", 70);
+				states[i]->SetPartyPopularity("Democrat", 30);
 			}
 
 			// Init State
@@ -702,8 +692,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(747865);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 70);
-				states[i]->SetPartyPopularityIndex("Democrat", 30);
+				states[i]->SetPartyPopularity("Republican", 70);
+				states[i]->SetPartyPopularity("Democrat", 30);
 			}
 
 			// Init State
@@ -716,8 +706,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(4410480);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 45);
-				states[i]->SetPartyPopularityIndex("Democrat", 55);
+				states[i]->SetPartyPopularity("Republican", 45);
+				states[i]->SetPartyPopularity("Democrat", 55);
 			}
 
 			// Init State
@@ -730,8 +720,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(5613798);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 53);
-				states[i]->SetPartyPopularityIndex("Democrat", 47);
+				states[i]->SetPartyPopularity("Republican", 53);
+				states[i]->SetPartyPopularity("Democrat", 47);
 			}
 
 			// Init State
@@ -744,8 +734,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(315261);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularityIndex("Republican", 5);
-				states[i]->SetPartyPopularityIndex("Democrat", 95);
+				states[i]->SetPartyPopularity("Republican", 5);
+				states[i]->SetPartyPopularity("Democrat", 95);
 			}
 		}
 	}

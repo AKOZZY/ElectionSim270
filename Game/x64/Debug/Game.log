@@ -1,8 +1,8 @@
 ﻿  Game.cpp
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(1144,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(1145,62): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(1146,89): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Main.cpp
-  Scenario.cpp
-  Generating Code...
-  Game.vcxproj -> C:\Users\kenny\Documents\GitHub\ElectionSim270\x64\Debug\Game.exe
+C:\Users\kenny\OneDrive\Documents\GitHub\ElectionSim270\Game\Game.cpp(1162,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\kenny\OneDrive\Documents\GitHub\ElectionSim270\Game\Game.cpp(1163,62): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\OneDrive\Documents\GitHub\ElectionSim270\Game\Game.cpp(1164,89): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\OneDrive\Documents\GitHub\ElectionSim270\Game\Game.cpp(1214,55): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kenny\OneDrive\Documents\GitHub\ElectionSim270\Game\Game.cpp(1215,71): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\OneDrive\Documents\GitHub\ElectionSim270\Game\Game.cpp(1215,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Game.vcxproj -> C:\Users\kenny\OneDrive\Documents\GitHub\ElectionSim270\x64\Debug\Game.exe

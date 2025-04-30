@@ -12,6 +12,8 @@ Game::Game()
 	// Init Game Buttons
 	buttonVisitState = new Button("Visit State", 20, 120, 20, Vector2{ 0, 0 });
 	buttonCancelVisitState = new Button("Cancel", 20, 120, 20, Vector2{ 0, 20 });
+	buttonSimulate = new Button("Simulate", 20, 120, 20, Vector2{ 650, 200 });
+	buttonCancelSimulate = new Button("Stop", 20, 120, 20, Vector2{ 650, 220 });
 
 	// Init Menu Buttons
 	buttonModernScenarios = new Button("Modern (1960-2024)", 20, 200, 20, Vector2{ 0, 200 });
@@ -1115,6 +1117,22 @@ void Game::Update()
 		selectedState->UpdatePartyPopularity("Independent", (float)GetRandomValue(1, 10), 2);
 	}
 
+	buttonSimulate->MouseHover(GetMousePosition());
+	if (buttonSimulate->isMouseOverButton && !hasClickedSimulate && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+	{
+		hasClickedSimulate = true;
+	}
+	if (hasClickedSimulate)
+	{
+		RandomizeSupport();
+	}
+
+	buttonCancelSimulate->MouseHover(GetMousePosition());
+	if (buttonCancelSimulate->isMouseOverButton && hasClickedSimulate && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+	{
+		hasClickedSimulate = false;
+	}
+
 	// Update Party Popularity
 	for (int i = 0; i < states.size(); i++)
 	{
@@ -1132,11 +1150,11 @@ void Game::Render()
 	DrawTextureEx(stateBorders, Vector2{ mapOffsetX, mapOffsetY }, 0, 1, WHITE);
 
 	// Draw MenuBox
-	DrawRectangle(570, 0, 300, 800, Color{ 0, 0, 0, 200 });
+	DrawRectangle(570, 0, 400, 800, Color{ 0, 0, 0, 200 });
 
-	// Candidate Portraits
-	DrawRectangle(600, 20, 80, 112, WHITE);
-	DrawRectangle(700, 20, 80, 112, WHITE);
+	// Candidate Portraits (Placeholders)
+	DrawRectangle(570, 0, 120, 165, WHITE);
+	DrawRectangle(730, 0, 120, 165, WHITE);
 
 	// Render EV's For Each Party
 	for (int i = 0; i < scenario->parties.size(); i++)
@@ -1146,12 +1164,21 @@ void Game::Render()
 		DrawText(TextFormat(" - %i", EVCalculator(scenario->parties[i]->GetName())), 720, 350 + y, 20, WHITE);
 	}
 	
-
 	// Click A State To Visit It (Boosts Popularity Of Your Party In That State)
 	if (hasClickedStateVisit)
 	{
 		buttonCancelVisitState->Draw();
-		DrawText("Click A State To Visit! (Costs 2 Points)", 0, 50, 19, BLACK);
+		DrawText("Click A State To Visit! (Costs 2 Points)", 0, 50, 20, BLACK);
+	}
+
+	if (hasClickedSimulate)
+	{
+		buttonCancelSimulate->Draw();
+		DrawText("Currently Simulating!", 625, 260, 20, WHITE);
+	}
+	else
+	{
+		buttonSimulate->Draw();
 	}
 
 	// Render States
@@ -1169,6 +1196,23 @@ void Game::Render()
 			{
 				stateTooltip.Show(selectedState, GetMousePosition());
 			}
+		}
+	}
+}
+
+void Game::RandomizeSupport()
+{
+	if (timer < updateInterval)
+	{
+		timer += GetFrameTime();
+	}
+	else
+	{
+		timer = 0;
+		for (int i = 0; i < states.size(); i++)
+		{
+			int rand = GetRandomValue(0, scenario->parties.size());
+			states[i]->UpdatePartyPopularityIndex(rand, GetRandomValue(1, 10), 0.3);
 		}
 	}
 }
