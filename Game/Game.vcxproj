@@ -136,6 +136,7 @@
     <ClCompile Include="Party.cpp" />
     <ClCompile Include="Scenario.cpp" />
     <ClCompile Include="State.cpp" />
+    <ClCompile Include="StateManager.cpp" />
     <ClCompile Include="StateTooltip.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +145,7 @@
     <ClInclude Include="Party.h" />
     <ClInclude Include="Scenario.h" />
     <ClInclude Include="State.h" />
+    <ClInclude Include="StateManager.h" />
     <ClInclude Include="StateTooltip.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

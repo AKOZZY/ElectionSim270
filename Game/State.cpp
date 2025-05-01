@@ -114,6 +114,11 @@ int State::GetPopularVotes()
 	return popularVotes;
 }
 
+void State::SetStateSprite(Texture2D sprite)
+{
+	stateTexture = sprite;
+}
+
 void State::BoostRepublicanPopularity(float percentage, float modifier)
 {
 	percentage *= modifier;
@@ -239,13 +244,13 @@ void State::CalculateStateColor()
 		{
 			currentColor = partiesRunning[0]->likely;
 		}
-		// Check If Party Popularity Is Less Than 10 But Greater Than 5
-		else if (sum <= 10 && sum > 5)
+		// Check If Party Popularity Is Less Than 10 But Greater Than 1
+		else if (sum <= 10 && sum > 1)
 		{
 			currentColor = partiesRunning[0]->lean;;
 		}
-		// Check If Party Popularity Is Less Than 5
-		else if (sum <= 5)
+		// Check If Party Popularity Is Less Than 1
+		else if (sum <= 1)
 		{
 			currentColor = partiesRunning[0]->tilt;;
 		}

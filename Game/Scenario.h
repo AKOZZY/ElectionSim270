@@ -26,8 +26,8 @@ class Scenario
 {
 public:
 	void LoadScenario(ScenarioID id, std::vector<State*> states);
-
 	std::vector<Party*> parties{};
+	Texture2D bordersSprite{};
 private:
 	// Scenario Year
 	std::string year{};

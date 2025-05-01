@@ -4,6 +4,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 {
 	if (id == SCENARIO_2024)
 	{
+		// Load Borders Sprite
+		bordersSprite = LoadTexture("assets/StateBorders.png");
 		// Create Parties For Scenario
 		Party* republican = new Party("Republican", Color{ 191, 29, 41, 255 }, Color{ 255, 88, 101, 255 }, Color{ 233, 139, 152, 255 }, Color{ 207, 137, 128, 255 });
 		Party* democrat = new Party("Democrat", Color{ 28, 64, 140, 255 }, Color{ 87, 124, 204, 255 }, Color{ 138, 175, 255, 255 }, Color{ 148, 155, 179, 255 });
@@ -358,8 +360,10 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Popular Votes
 				states[i]->SetPopularVotes(1975375);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularity("Republican", 60);
-				states[i]->SetPartyPopularity("Democrat", 40);
+				states[i]->SetPartyPopularity("Republican", 34);
+				states[i]->SetPartyPopularity("Democrat", 31);
+				states[i]->SetPartyPopularity("S. Democrat", 33);
+				states[i]->SetPartyPopularity("C. Union", 2);
 			}
 
 			// Init State
@@ -743,11 +747,13 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 	}
 	else if (id == SCENARIO_1860)
 	{
+		// Load Borders Sprite
+		bordersSprite = LoadTexture("assets/StateBorders1788to1860.png");
 		// Create Parties For Scenario
 		Party* republican = new Party("Republican", Color{ 191, 29, 41, 255 }, Color{ 255, 88, 101, 255 }, Color{ 233, 139, 152, 255 }, Color{ 207, 137, 128, 255 });
 		Party* democrat = new Party("Democrat", Color{ 28, 64, 140, 255 }, Color{ 87, 124, 204, 255 }, Color{ 138, 175, 255, 255 }, Color{ 148, 155, 179, 255 });
 		Party* southernDemocrat = new Party("S. Democrat", Color{ 195, 169, 41, 255 }, Color{ 208, 190, 98, 255 }, Color{ 255, 234, 131, 255 }, Color{ 204, 196, 158, 255 });
-		Party* constitutionalUnion = new Party("C. Union", Color{ 195, 169, 41, 255 }, Color{ 208, 190, 98, 255 }, Color{ 255, 234, 131, 255 }, Color{ 204, 196, 158, 255 });
+		Party* constitutionalUnion = new Party("C. Union", Color{ 62, 101, 57, 255 }, Color{ 121, 163, 116, 255 }, Color{ 154, 226, 146, 255 }, Color{ 174, 204, 158, 255 });
 
 		parties.push_back(republican);
 		parties.push_back(democrat);
@@ -760,9 +766,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			Party* republican = new Party("Republican", Color{ 191, 29, 41, 255 }, Color{ 255, 88, 101, 255 }, Color{ 233, 139, 152, 255 }, Color{ 207, 137, 128, 255 });
 			Party* democrat = new Party("Democrat", Color{ 28, 64, 140, 255 }, Color{ 87, 124, 204, 255 }, Color{ 138, 175, 255, 255 }, Color{ 148, 155, 179, 255 });
 			Party* southernDemocrat = new Party("S. Democrat", Color{ 195, 169, 41, 255 }, Color{ 208, 190, 98, 255 }, Color{ 255, 234, 131, 255 }, Color{ 204, 196, 158, 255 });
-			Party* constitutionalUnion = new Party("C. Union", Color{ 195, 169, 41, 255 }, Color{ 208, 190, 98, 255 }, Color{ 255, 234, 131, 255 }, Color{ 204, 196, 158, 255 });
+			Party* constitutionalUnion = new Party("C. Union", Color{ 62, 101, 57, 255 }, Color{ 121, 163, 116, 255 }, Color{ 154, 226, 146, 255 }, Color{ 174, 204, 158, 255 });
 
-			states[i]->AddParty(republican);
 			states[i]->AddParty(democrat);
 			states[i]->AddParty(southernDemocrat);
 			states[i]->AddParty(constitutionalUnion);
@@ -773,12 +778,16 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
-				states[i]->SetElectoralVotes(54);
+				states[i]->SetElectoralVotes(4);
 				// Set Popular Votes
-				states[i]->SetPopularVotes(15357876);
+				states[i]->SetPopularVotes(119885);
+				// Add Parties Manually
+				states[i]->AddParty(republican);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularity("Republican", 52);
-				states[i]->SetPartyPopularity("Democrat", 48);
+				states[i]->SetPartyPopularity("Republican", 32);
+				states[i]->SetPartyPopularity("Democrat", 31);
+				states[i]->SetPartyPopularity("S. Democrat", 30);
+				states[i]->SetPartyPopularity("C. Union", 7);
 			}
 
 			// Init State
@@ -787,12 +796,16 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
-				states[i]->SetElectoralVotes(8);
+				states[i]->SetElectoralVotes(3);
 				// Set Popular Votes
-				states[i]->SetPopularVotes(2160080);
+				states[i]->SetPopularVotes(14761);
+				// Add Parties Manually
+				states[i]->AddParty(republican);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularity("Republican", 54);
-				states[i]->SetPartyPopularity("Democrat", 46);
+				states[i]->SetPartyPopularity("Republican", 34);
+				states[i]->SetPartyPopularity("Democrat", 31);
+				states[i]->SetPartyPopularity("S. Democrat", 33);
+				states[i]->SetPartyPopularity("C. Union", 2);
 			}
 
 			// Init State
@@ -955,13 +968,13 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
-				states[i]->SetElectoralVotes(40);
+				states[i]->SetElectoralVotes(4);
 				// Set Popular Votes
-				states[i]->SetPopularVotes(11228847);
+				states[i]->SetPopularVotes(62986);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularity("Republican", 10);
 				states[i]->SetPartyPopularity("Democrat", 10);
-				states[i]->SetPartyPopularity("S. Democrat", 80);
+				states[i]->SetPartyPopularity("S. Democrat", 70);
+				states[i]->SetPartyPopularity("C. Union", 20);
 			}
 
 			// Init State
@@ -1040,12 +1053,16 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
-				states[i]->SetElectoralVotes(10);
+				states[i]->SetElectoralVotes(4);
 				// Set Popular Votes
-				states[i]->SetPopularVotes(3176011);
+				states[i]->SetPopularVotes(34787);
+				// Add Parties Manually
+				states[i]->AddParty(republican);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularity("Republican", 55);
-				states[i]->SetPartyPopularity("Democrat", 45);
+				states[i]->SetPartyPopularity("Republican", 70);
+				states[i]->SetPartyPopularity("Democrat", 27);
+				states[i]->SetPartyPopularity("S. Democrat", 2);
+				states[i]->SetPartyPopularity("C. Union", 1);
 			}
 
 			// Init State
@@ -1054,12 +1071,16 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
-				states[i]->SetElectoralVotes(6);
+				states[i]->SetElectoralVotes(4);
 				// Set Popular Votes
-				states[i]->SetPopularVotes(1634297);
+				states[i]->SetPopularVotes(128739);
+				// Add Parties Manually
+				states[i]->AddParty(republican);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularity("Republican", 56);
-				states[i]->SetPartyPopularity("Democrat", 44);
+				states[i]->SetPartyPopularity("Republican", 54);
+				states[i]->SetPartyPopularity("Democrat", 42);
+				states[i]->SetPartyPopularity("S. Democrat", 2);
+				states[i]->SetPartyPopularity("C. Union", 2);
 			}
 
 			// Init State
@@ -1068,12 +1089,16 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Enable
 				states[i]->Enable();
 				// Set Electoral Votes
-				states[i]->SetElectoralVotes(10);
+				states[i]->SetElectoralVotes(9);
 				// Set Popular Votes
-				states[i]->SetPopularVotes(2952585);
+				states[i]->SetPopularVotes(165563);
+				// Add Parties Manually
+				states[i]->AddParty(republican);
 				// Set Party Popularity In State
-				states[i]->SetPartyPopularity("Republican", 40);
-				states[i]->SetPartyPopularity("Democrat", 60);
+				states[i]->SetPartyPopularity("Republican", 10);
+				states[i]->SetPartyPopularity("Democrat", 35);
+				states[i]->SetPartyPopularity("S. Democrat", 21);
+				states[i]->SetPartyPopularity("C. Union", 34);
 			}
 
 			// Init State
@@ -1432,7 +1457,7 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			if (states[i]->GetName() == "West Virginia")
 			{
 				// Enable
-				states[i]->Enable();
+				states[i]->Disable();
 				// Set Electoral Votes
 				states[i]->SetElectoralVotes(4);
 				// Set Popular Votes
@@ -1454,6 +1479,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Party Popularity In State
 				states[i]->SetPartyPopularity("Republican", 45);
 				states[i]->SetPartyPopularity("Democrat", 55);
+				// Set Sprite
+				states[i]->SetStateSprite(LoadTexture("assets/states/unifiedvirginia.png"));
 			}
 
 			// Init State
@@ -1474,7 +1501,7 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			if (states[i]->GetName() == "D. C")
 			{
 				// Enable
-				states[i]->Enable();
+				states[i]->Disable();
 				// Set Electoral Votes
 				states[i]->SetElectoralVotes(3);
 				// Set Popular Votes

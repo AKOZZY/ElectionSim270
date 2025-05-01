@@ -3,13 +3,11 @@
 void StateTooltip::Show(State* selectedState, Vector2 mousePosition)
 {
 	// Draw Tooltip Box
-	DrawRectangle(mousePosition.x + 50, mousePosition.y - 70, 280, 175, BLACK);
+	DrawRectangle(mousePosition.x + 50, mousePosition.y - 70, 280, 180, BLACK);
 	// Draw State Name
 	DrawText(selectedState->GetName(), mousePosition.x + 55, mousePosition.y - 60, 25, WHITE);
 	// Draw State Electoral Votes
 	DrawText(TextFormat("Electoral Votes: %i", selectedState->GetElectoralVotes()), mousePosition.x + 55, mousePosition.y - 20, 20, WHITE);
-	// Draw State Popular Votes
-	//DrawText(TextFormat("Popular Votes: %i", selectedState->GetPopularVotes()), mousePosition.x + 55, mousePosition.y, 20, WHITE);
 	DrawText("Popular Votes:", mousePosition.x + 55, mousePosition.y, 20, WHITE);
 	DrawText(FormatNumber(selectedState->GetPopularVotes()).c_str(), mousePosition.x + 220, mousePosition.y, 20, WHITE);
 

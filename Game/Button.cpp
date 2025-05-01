@@ -61,3 +61,8 @@ void Button::MouseHover(Vector2 mousePosition)
 		isMouseOverButton = false;
 	}
 }
+
+void Button::SetPosition(Vector2 position)
+{
+	this->position = position;
+}

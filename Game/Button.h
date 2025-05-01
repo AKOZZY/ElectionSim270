@@ -10,6 +10,7 @@ public:
 	void DrawTexture();
 	void Draw();
 	void MouseHover(Vector2 mousePosition);
+	void SetPosition(Vector2 position);
 	bool isMouseOverButton{};
 private:
 	std::string text{};

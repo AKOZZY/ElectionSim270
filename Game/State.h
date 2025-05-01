@@ -28,6 +28,7 @@ public:
 	int GetElectoralVotes();
 	void SetPopularVotes(int pv);
 	int GetPopularVotes();
+	void SetStateSprite(Texture2D sprite);
 
 	void BoostRepublicanPopularity(float percentage, float modifier);
 	void BoostDemocraticPopularity(float percentage, float modifier);
@@ -50,6 +51,8 @@ public:
 	bool isDemocraticAhead{};
 	bool isRepublicanAhead{};
 
+	bool isEnabled{};
+
 	std::vector<Party*> partiesRunning{};
 private:
 	// State Charactoristics
@@ -59,8 +62,6 @@ private:
 
 	float republicanPopularity{};
 	float democraticPopularity{};
-
-	bool isEnabled{};
 
 	Texture2D stateTexture{};
 	std::vector<Vector2> vertexPoints{};
