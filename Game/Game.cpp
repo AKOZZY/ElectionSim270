@@ -50,6 +50,8 @@ Game::~Game()
 
 void Game::UpdateMenu()
 {
+	scenario->Reset(stateManager->states);
+
 	// SCENARIO 2024
 	buttonModernScenarios->MouseHover(GetMousePosition());
 	if (buttonModernScenarios->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
@@ -151,6 +153,12 @@ void Game::Update()
 	{
 		stateManager->states[i]->CalculateStateColor();
 	}
+
+	buttonExitToMenu->MouseHover(GetMousePosition());
+	if (buttonExitToMenu->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT) && gameState == IN_GAME)
+	{
+		gameState = IN_MAIN_MENU;
+	}
 }
 
 // Draw
@@ -197,10 +205,7 @@ void Game::Render()
 	// Render States
 	for (int i = 0; i < stateManager->states.size(); i++)
 	{
-		if (stateManager->states[i]->isEnabled)
-		{
-			stateManager->states[i]->Render(Vector2{ stateManager->GetMapOffsetX() ,  stateManager->GetMapOffsetY() });
-		}
+		stateManager->states[i]->Render(Vector2{ stateManager->GetMapOffsetX() ,  stateManager->GetMapOffsetY() });
 		
 	}
 

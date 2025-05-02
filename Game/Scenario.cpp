@@ -714,6 +714,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Party Popularity In State
 				states[i]->SetPartyPopularity("Republican", 45);
 				states[i]->SetPartyPopularity("Democrat", 55);
+				// Set Sprite
+				states[i]->SetStateSprite(LoadTexture("assets/states/virginia.png"));
 			}
 
 			// Init State
@@ -1512,4 +1514,19 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 			}
 	}
 }
+}
+
+void Scenario::Reset(std::vector<State*> &states)
+{
+	// Clear Parties
+	parties.clear();
+	// Clear Parties From Each State
+	for (int i = 0; i < states.size(); i++)
+	{
+		if (states[i] != nullptr)
+		{
+			states[i]->partiesRunning.clear();
+		}
+		
+	}
 }

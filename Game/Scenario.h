@@ -26,6 +26,7 @@ class Scenario
 {
 public:
 	void LoadScenario(ScenarioID id, std::vector<State*> states);
+	void Reset(std::vector<State*> &states);
 	std::vector<Party*> parties{};
 	Texture2D bordersSprite{};
 private:
