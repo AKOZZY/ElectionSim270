@@ -52,6 +52,7 @@ public:
 	bool isRepublicanAhead{};
 
 	bool isEnabled{};
+	bool isHidden{};
 
 	std::vector<Party*> partiesRunning{};
 private:

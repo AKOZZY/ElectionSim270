@@ -159,6 +159,11 @@ void Game::Update()
 	{
 		gameState = IN_MAIN_MENU;
 	}
+
+	if (IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+	{
+		std::cout << "X: " << GetMousePosition().x << "Y: " << GetMousePosition().y << "\n";
+	}
 }
 
 // Draw
@@ -171,18 +176,18 @@ void Game::Render()
 	DrawTextureEx(scenario->bordersSprite, Vector2{ stateManager->GetMapOffsetX(),  stateManager->GetMapOffsetY()}, 0, 1, WHITE);
 
 	// Draw MenuBox
-	DrawRectangle(570, 0, 400, 800, Color{ 0, 0, 0, 200 });
+	DrawRectangle(1280 - 400, 0, 400, 800, Color{ 0, 0, 0, 200 });
 
 	// Candidate Portraits (Placeholders)
-	DrawRectangle(570, 0, 120, 165, WHITE);
-	DrawRectangle(730, 0, 120, 165, WHITE);
+	DrawRectangle(890, 10, 176, 250, WHITE);
+	DrawRectangle(1090, 10, 176, 250, WHITE);
 
 	// Render EV's For Each Party
 	for (int i = 0; i < scenario->parties.size(); i++)
 	{
 		float y = i * 20;
-		DrawText(scenario->parties[i]->GetName().c_str(), 600, 350 + y, 20, scenario->parties[i]->safe);
-		DrawText(TextFormat(" - %i", EVCalculator(scenario->parties[i]->GetName())), 720, 350 + y, 20, WHITE);
+		DrawText(scenario->parties[i]->GetName().c_str(), 985, 300 + y, 20, scenario->parties[i]->safe);
+		DrawText(TextFormat(" - %i", EVCalculator(scenario->parties[i]->GetName())), 1100, 300 + y, 20, WHITE);
 	}
 	
 	// Click A State To Visit It (Boosts Popularity Of Your Party In That State)
@@ -205,8 +210,10 @@ void Game::Render()
 	// Render States
 	for (int i = 0; i < stateManager->states.size(); i++)
 	{
-		stateManager->states[i]->Render(Vector2{ stateManager->GetMapOffsetX() ,  stateManager->GetMapOffsetY() });
-		
+		if (stateManager->states[i]->isHidden == false)
+		{
+			stateManager->states[i]->Render(Vector2{ stateManager->GetMapOffsetX() ,  stateManager->GetMapOffsetY() });
+		}
 	}
 
 	// Show State Tooltips

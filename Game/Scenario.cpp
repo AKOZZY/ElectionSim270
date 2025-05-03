@@ -836,6 +836,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Party Popularity In State
 				states[i]->SetPartyPopularity("Republican", 40);
 				states[i]->SetPartyPopularity("Democrat", 60);
+				// Hide State Completely
+				states[i]->isHidden = true;
 			}
 
 			// Init State
@@ -864,6 +866,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Party Popularity In State
 				states[i]->SetPartyPopularity("Republican", 55);
 				states[i]->SetPartyPopularity("Democrat", 45);
+				// Hide State Completely
+				states[i]->isHidden = true;
 			}
 
 			// Init State
@@ -1511,6 +1515,8 @@ void Scenario::LoadScenario(ScenarioID id, std::vector<State*> states)
 				// Set Party Popularity In State
 				states[i]->SetPartyPopularity("Republican", 5);
 				states[i]->SetPartyPopularity("Democrat", 95);
+				// Hide State Completely
+				states[i]->isHidden = true;
 			}
 	}
 }
@@ -1528,5 +1534,7 @@ void Scenario::Reset(std::vector<State*> &states)
 			states[i]->partiesRunning.clear();
 		}
 		
+		// Reset State Properties
+		states[i]->isHidden = false;
 	}
 }

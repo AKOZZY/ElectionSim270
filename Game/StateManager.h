@@ -67,7 +67,7 @@ private:
 	State* north_carolina{};
 	State* dc{};
 	// Offsets
-	float mapOffsetX{ 10.0f };
-	float mapOffsetY{ 70.0f };
+	float mapOffsetX{ 120.0f };
+	float mapOffsetY{ 100.0f };
 };
 
