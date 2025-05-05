@@ -13,13 +13,20 @@ enum GameState
 {
 	IN_MAIN_MENU,
 	IN_GAME,
-	IN_RESULTS
+	IN_RESULTS,
 };
 
 enum MenuState
 {
 	DEFAULT,
 	IN_SCENARIO_SCREEN,
+};
+
+enum ScenarioSelectionState
+{
+	S_NULL,
+	S_2024,
+	S_1860,
 };
 
 class Game
@@ -40,12 +47,16 @@ public:
 	GameState gameState{};
 	// Menu State
 	MenuState menuState{};
+	// Scenario State
+	ScenarioSelectionState scenarioState{};
 	// Game Functions
 	int EVCalculator(std::string nameOfParty);
+	// Debugging Functions
+	void PrintMouseLocationOnClick();
 private:
 	// Timers
 	float timer{};
-	float updateInterval{ 1 };
+	float updateInterval{ 0.5 };
 	// States Vector
 	StateManager* stateManager{};
 	// State Tooltip
@@ -62,7 +73,7 @@ private:
 	std::vector<Button*> scenarioButtons{};
 	Button* buttonScenario2024{};
 	Button* buttonScenario1860{};
-	Button* buttonModernScenarios{};
+	Button* buttonChooseYear{};
 	Button* buttonVisitState{};
 	Button* buttonCancelVisitState{};
 	Button* buttonSimulate{};
@@ -70,6 +81,9 @@ private:
 	Button* buttonExitToMenu{};
 	// Scenarios
 	Scenario* scenario{};
+	// Scenario Preview Images
+	Texture2D sp_2024{};
+	const char* sp_2024_bio{};
 };
 
 // Template Functions

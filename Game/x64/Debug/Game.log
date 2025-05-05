@@ -1,9 +1,9 @@
 ﻿  Game.cpp
 C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(29,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(188,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(189,62): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(190,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(248,55): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(249,85): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(249,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(208,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(209,62): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(210,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(268,55): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(269,85): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(269,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Game.vcxproj -> C:\Users\kenny\Documents\GitHub\ElectionSim270\x64\Debug\Game.exe

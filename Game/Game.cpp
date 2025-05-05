@@ -12,12 +12,12 @@ Game::Game()
 	// Init Game Buttons
 	buttonVisitState = new Button("Visit State", 20, 120, 20, Vector2{ 0, 0 });
 	buttonCancelVisitState = new Button("Cancel", 20, 120, 20, Vector2{ 0, 20 });
-	buttonSimulate = new Button("Simulate", 20, 120, 20, Vector2{ 650, 200 });
-	buttonCancelSimulate = new Button("Stop", 20, 120, 20, Vector2{ 650, 220 });
-	buttonExitToMenu = new Button("Exit To Menu", 20, 140, 20, Vector2{ 0, 430 });
+	buttonSimulate = new Button("Simulate", 20, 120, 20, Vector2{ 880 - 120, 0 });
+	buttonCancelSimulate = new Button("Stop", 20, 120, 20, Vector2{ 880 - 120, 20 });
+	buttonExitToMenu = new Button("Exit To Menu", 20, 140, 20, Vector2{ 0, 720 - 20 });
 
 	// Init Menu Buttons
-	buttonModernScenarios = new Button("Select Year", 20, 200, 20, Vector2{ 0, 200 });
+	buttonChooseYear = new Button("Select Year", 20, 200, 20, Vector2{ 0, 200 });
 
 	// Play Scenario Buttons
 	buttonScenario2024 = new Button("2024", 20, 120, 20, Vector2{ 475, 20 });
@@ -34,6 +34,19 @@ Game::Game()
 	selectedState = nullptr;
 
 	stateManager = new StateManager();
+
+	// Load Scenario Previews
+	sp_2024 = LoadTexture("assets/scenariopreviews/sp_2024.png");
+	sp_2024_bio =
+		"After a humiliating debate \n"
+		"with Trump, Biden has officially \n"
+		"dropped out of the race and \n"
+		"has endorsed his VP Kamala Harris.\n"
+		"With tensions rising across \n"
+		"the world and many ongoing wars, \n"
+		"the american people are lost and \n"
+		"they need a strong leader who can help \n"
+		"guide them through the many crisis of 2024!";
 }
 
 // De-Init
@@ -44,7 +57,7 @@ Game::~Game()
 	delete(stateManager);
 	delete(buttonVisitState);
 	delete(buttonCancelVisitState);
-	delete(buttonModernScenarios);
+	delete(buttonChooseYear);
 	delete(buttonScenario2024);
 }
 
@@ -53,8 +66,8 @@ void Game::UpdateMenu()
 	scenario->Reset(stateManager->states);
 
 	// SCENARIO 2024
-	buttonModernScenarios->MouseHover(GetMousePosition());
-	if (buttonModernScenarios->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+	buttonChooseYear->MouseHover(GetMousePosition());
+	if (buttonChooseYear->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 	{
 		menuState = IN_SCENARIO_SCREEN;
 	}
@@ -64,8 +77,9 @@ void Game::UpdateMenu()
 		buttonScenario2024->MouseHover(GetMousePosition());
 		if (buttonScenario2024->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 		{
-			scenario->LoadScenario(SCENARIO_2024, stateManager->states);
-			gameState = IN_GAME;
+			//scenario->LoadScenario(SCENARIO_2024, stateManager->states);
+			scenarioState = S_2024;
+			//gameState = IN_GAME;
 		}
 
 		buttonScenario1860->MouseHover(GetMousePosition());
@@ -81,10 +95,12 @@ void Game::RenderMenu()
 {
 	// Draw Menu Logo
 	//DrawTexture(gameLogo, 25, 25, WHITE);
-	DrawTextureEx(gameLogo, Vector2{ 25 , 0 }, 0, 2, WHITE);
-	buttonModernScenarios->Draw();
+	DrawTextureEx(gameLogo, Vector2{ 30 , 30 }, 0, 2, WHITE);
 
-	DrawRectangle(450, 0, 300, 900, Color{0, 0, 0, 200});
+	buttonChooseYear->SetPosition(Vector2{ 125, 225 });
+	buttonChooseYear->Draw();
+
+	//DrawRectangle(450, 0, 300, 900, Color{0, 0, 0, 200});
 
 	if (menuState == IN_SCENARIO_SCREEN)
 	{
@@ -92,6 +108,13 @@ void Game::RenderMenu()
 		{
 			scenarioButtons[i]->Draw();
 		}
+	}
+
+	if (scenarioState == S_2024)
+	{
+		DrawRectangle(700, 0, 600, 750, Color{0, 0, 0, 200});
+		DrawTextureEx(sp_2024, Vector2{770, 50}, 0, 2, WHITE);
+		DrawText(sp_2024_bio, 770, 300, 20, WHITE);
 	}
 }
 
@@ -160,10 +183,7 @@ void Game::Update()
 		gameState = IN_MAIN_MENU;
 	}
 
-	if (IsMouseButtonDown(MOUSE_BUTTON_LEFT))
-	{
-		std::cout << "X: " << GetMousePosition().x << "Y: " << GetMousePosition().y << "\n";
-	}
+	PrintMouseLocationOnClick();
 }
 
 // Draw
@@ -200,7 +220,7 @@ void Game::Render()
 	if (hasClickedSimulate)
 	{
 		buttonCancelSimulate->Draw();
-		DrawText("Currently Simulating!", 625, 260, 20, WHITE);
+		DrawText("Currently Simulating!", 600, 60, 20, BLACK);
 	}
 	else
 	{
@@ -262,4 +282,12 @@ int Game::EVCalculator(std::string nameOfParty)
 		}
 	}
 	return sum;
+}
+
+void Game::PrintMouseLocationOnClick()
+{
+	if (IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+	{
+		std::cout << "X: " << GetMousePosition().x << "Y: " << GetMousePosition().y << "\n";
+	}
 }
