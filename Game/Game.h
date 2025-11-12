@@ -79,11 +79,16 @@ private:
 	Button* buttonSimulate{};
 	Button* buttonCancelSimulate{};
 	Button* buttonExitToMenu{};
+	Button* buttonLoadScenario{};
 	// Scenarios
 	Scenario* scenario{};
-	// Scenario Preview Images
+	// Scenario Preview Images And Bio's
+	// 2024
 	Texture2D sp_2024{};
 	const char* sp_2024_bio{};
+	// 1860
+	Texture2D sp_1880{};
+	const char* sp_1860_bio{};
 };
 
 // Template Functions

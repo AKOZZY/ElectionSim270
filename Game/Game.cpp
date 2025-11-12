@@ -15,6 +15,7 @@ Game::Game()
 	buttonSimulate = new Button("Simulate", 20, 120, 20, Vector2{ 880 - 120, 0 });
 	buttonCancelSimulate = new Button("Stop", 20, 120, 20, Vector2{ 880 - 120, 20 });
 	buttonExitToMenu = new Button("Exit To Menu", 20, 140, 20, Vector2{ 0, 720 - 20 });
+	buttonLoadScenario = new Button("Load Scenario", 20, 120, 20, Vector2{ 500, 600 });
 
 	// Init Menu Buttons
 	buttonChooseYear = new Button("Select Year", 20, 200, 20, Vector2{ 0, 200 });
@@ -39,14 +40,9 @@ Game::Game()
 	sp_2024 = LoadTexture("assets/scenariopreviews/sp_2024.png");
 	sp_2024_bio =
 		"After a humiliating debate \n"
-		"with Trump, Biden has officially \n"
-		"dropped out of the race and \n"
-		"has endorsed his VP Kamala Harris.\n"
-		"With tensions rising across \n"
-		"the world and many ongoing wars, \n"
-		"the american people are lost and \n"
-		"they need a strong leader who can help \n"
-		"guide them through the many crisis of 2024!";
+		"with former president Donald Trump,\n"
+		"Sitting president Joe Biden \n"
+		"decides not to run for re-election.\n";
 }
 
 // De-Init
@@ -115,6 +111,18 @@ void Game::RenderMenu()
 		DrawRectangle(700, 0, 600, 750, Color{0, 0, 0, 200});
 		DrawTextureEx(sp_2024, Vector2{770, 50}, 0, 2, WHITE);
 		DrawText(sp_2024_bio, 770, 300, 20, WHITE);
+	}
+
+	if (scenarioState == S_1860)
+	{
+		DrawRectangle(700, 0, 600, 750, Color{ 0, 0, 0, 200 });
+		DrawTextureEx(sp_2024, Vector2{ 770, 50 }, 0, 2, WHITE);
+		DrawText(sp_2024_bio, 770, 300, 20, WHITE);
+	}
+
+	if (scenarioState != S_NULL)
+	{
+		buttonLoadScenario->Draw();
 	}
 }
 
