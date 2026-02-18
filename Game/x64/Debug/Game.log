@@ -1,4 +1,17 @@
-﻿  Game.cpp
+﻿  Button.cpp
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(26,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(26,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(32,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(32,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(40,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(40,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(41,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(41,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(45,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(45,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(46,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Button.cpp(46,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Game.cpp
 C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(30,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
 C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(216,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
 C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(217,62): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
@@ -7,5 +20,34 @@ C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(276,55): warning C4
 C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(277,85): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\Game.cpp(277,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Main.cpp
+  Party.cpp
+  Scenario.cpp
+  State.cpp
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\State.cpp(126,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\State.cpp(133,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\State.cpp(153,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\State.cpp(153,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\State.cpp(160,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\State.cpp(160,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\State.cpp(278,84): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  StateManager.cpp
+  StateTooltip.cpp
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(6,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(6,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(8,75): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(8,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(10,120): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(10,98): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(11,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(11,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(12,103): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(12,83): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(18,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(19,108): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(19,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(20,128): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\StateTooltip.cpp(20,100): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   Generating Code...
+C:\Users\kenny\Documents\GitHub\ElectionSim270\Game\State.cpp(287): warning C4715: 'State::IsMouseOverState': not all control paths return a value
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Game.vcxproj -> C:\Users\kenny\Documents\GitHub\ElectionSim270\x64\Debug\Game.exe
