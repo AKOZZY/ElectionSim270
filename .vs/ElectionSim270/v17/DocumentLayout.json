@@ -106,7 +106,7 @@
               "RelativeDocumentMoniker": "Game\\Game.cpp",
               "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\ElectionSim270\\Game\\Game.cpp",
               "RelativeToolTip": "Game\\Game.cpp",
-              "ViewState": "AgIAANIAAAAAAAAAAAAAAHcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-10T14:40:07.406Z",
               "IsPinned": true,
@@ -122,8 +122,7 @@
               "RelativeToolTip": "Game\\StateManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-01T16:40:06.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T16:40:06.236Z"
             },
             {
               "$type": "Document",
@@ -171,8 +170,7 @@
               "RelativeToolTip": "Game\\StateTooltip.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-10T19:53:55.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T19:53:55.735Z"
             },
             {
               "$type": "Document",
@@ -184,8 +182,7 @@
               "RelativeToolTip": "Game\\StateTooltip.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-10T19:54:47.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T19:54:47.231Z"
             },
             {
               "$type": "Document",

@@ -37,12 +37,8 @@ Game::Game()
 	stateManager = new StateManager();
 
 	// Load Scenario Previews
-	sp_2024 = LoadTexture("assets/scenariopreviews/sp_2024.png");
-	sp_2024_bio =
-		"After a humiliating debate \n"
-		"with former president Donald Trump,\n"
-		"Sitting president Joe Biden \n"
-		"decides not to run for re-election.\n";
+	//sp_2024 = LoadTexture("assets/scenariopreviews/sp_2024.png");
+	//sp_2024_bio = "";
 }
 
 // De-Init
