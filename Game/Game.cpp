@@ -69,9 +69,9 @@ void Game::UpdateMenu()
 		buttonScenario2024->MouseHover(GetMousePosition());
 		if (buttonScenario2024->isMouseOverButton && IsMouseButtonDown(MOUSE_BUTTON_LEFT))
 		{
-			//scenario->LoadScenario(SCENARIO_2024, stateManager->states);
+			scenario->LoadScenario(SCENARIO_2024, stateManager->states);
 			scenarioState = S_2024;
-			//gameState = IN_GAME;
+			gameState = IN_GAME;
 		}
 
 		buttonScenario1860->MouseHover(GetMousePosition());
